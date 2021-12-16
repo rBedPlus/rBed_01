@@ -1,108 +1,27 @@
-all_tests = function()
-{ 
-  # cut and paste into the R-shell any group of these commands
-  rm(list=ls())
-  workDir = "~/DeskTop/github/OPUS2_2021_bgmc_Li/_lib_R/rBed_bgmc" ; setwd(workDir)
-  lib_R_dir     = "../"
-  source(file.path("~/DeskTop/github/OPUS2_2021_bgmc_Li/_lib_R/_lib_R_resources.R"))
-  source(file.path(workDir, "bgmc_unate_greedy_chvatal.R" ))
-  fg_bgmc_unate_greedy_chvatal_abcd()
-  
-  rm(list=ls())
-  workDir = "~/DeskTop/github/__rBed_latex/_Figures/fg_bgmc" ; setwd(workDir)
-  lib_R_dir     = "../../../_lib_R"
-  source(file.path(lib_R_dir, "_lib_R_resources.R"))
-  data_dir   = "../../../_data/bigraph/unate/steiner3/"
-  instanceDef = file.path(data_dir, "steiner3_009_12.cnfU")
-  source(file.path(workDir, "fg_bgmc_unate_greedy_chvatal.R" ))
-  unate_init_greedy(instanceDef, greedyId="chvatal_S")
-  unate_greedy_chvatal()
-  
-  rm(list=ls())
-  workDir = "~/DeskTop/github/OPUS2_2021_bgmc_Li/_lib_R/rBed_bgmc" ; setwd(workDir)
-  lib_R_dir     = "../"
-  source(file.path("~/DeskTop/github/OPUS2_2021_bgmc_Li/_lib_R/_lib_R_resources.R"))
-  instanceDef = file.path("~/DeskTop/github/OPUS2_2021_bgmc_Li/_data_tiny/bigraph/unateAll/chvatal_6_5.cnfW")
-  source(file.path(workDir, "bgmc_unate_greedy_chvatal.R" ))
-  fg_bgmc_unate_greedy_chvatal_iso_distr_school_9_11()
-  
-  rm(list=ls())
-  workDir = "~/DeskTop/github/OPUS2_2021_bgmc_Li/_lib_R/rBed_bgmc" ; setwd(workDir)
-  lib_R_dir     = "../"
-  source(file.path("~/DeskTop/github/OPUS2_2021_bgmc_Li/_lib_R/_lib_R_resources.R"))
-  instanceDef = file.path("~/DeskTop/github/OPUS2_2021_bgmc_Li/_data_tiny/bigraph/unateAll/chvatal_6_5.cnfW")
-  source(file.path(workDir, "bgmc_unate_greedy_chvatal.R" ))
-  unate_greedy_chvatal_experiment_F_iso(instanceDef, replicateSize = 10)
-  
-  rm(list=ls())
-  workDir = "~/DeskTop/github/OPUS2_2021_bgmc_Li/_lib_R/rBed_bgmc" ; setwd(workDir)
-  lib_R_dir     = "../"
-  source(file.path("~/DeskTop/github/OPUS2_2021_bgmc_Li/_lib_R/_lib_R_resources.R"))
-  instanceDef = file.path("~/DeskTop/github/OPUS2_2021_bgmc_Li/_data/bigraph/orlib/scpb1.cnfW")
-  source(file.path(workDir, "bgmc_unate_greedy_chvatal.R" ))
-  unate_greedy_chvatal_experiment_distr(instanceDef, replicateSize = 10, greedyId="chvatal_S")
-  
-  rm(list=ls())
-  workDir = "~/DeskTop/github/OPUS2_2021_bgmc_Li/_lib_R/rBed_bgmc" ; setwd(workDir)
-  lib_R_dir     = "../"
-  source(file.path("~/DeskTop/github/OPUS2_2021_bgmc_Li/_lib_R/_lib_R_resources.R"))
-  instanceDef = file.path("~/DeskTop/github/OPUS2_2021_bgmc_Li/_data/bigraph/unate/steiner3/steiner3_027_117.cnfU")
-  source(file.path(workDir, "bgmc_unate_greedy_chvatal.R" ))
-  unate_greedy_chvatal_experiment(instanceDef, replicateSize = 1000, greedyId="chvatal_S")
-  
-  
-  rm(list=ls())
-  workDir = "~/DeskTop/github/OPUS2_2021_bgmc_Li/_lib_R/rBed_bgmc" ; setwd(workDir)
-  lib_R_dir     = "../"
-  source(file.path("~/DeskTop/github/OPUS2_2021_bgmc_Li/_lib_R/_lib_R_resources.R"))
-  instanceDef = file.path("~/DeskTop/github/OPUS2_2021_bgmc_Li/_data/bigraph/orlib/scpb1.cnfW")
-  source(file.path(workDir, "bgmc_unate_greedy_chvatal.R" ))
-  unate_greedy_chvatal_UB(instanceDef)
-  
-  rm(list=ls())
-  workDir = "~/DeskTop/github/OPUS2_2021_bgmc_Li/_latex/_Figures/fg_bgmc" ; setwd(workDir)
-  lib_R_dir     = "../../../_lib_R"
-  source(file.path(lib_R_dir, "_lib_R_resources.R"))
-  source(file.path(workDir, "fg_bgmc_unate_greedy_chvatal.R" ))
-  fg_bgmc_upper_bound_steiner()
-  
-} # all_tests = function()
+# bgmc_covering.R
+# Author: Eason Li
+# Date: 12/16/2021
 
 #----Functions-----
-all_tests = function() {
+all_tests_functions = function() {
   source("~/__init_rBed_01.R")
   rBedPath = glob[["rBedPath"]]  
   glob[["workDir"]] = paste0(rBedPath, "/rBed_bgmc", "/bgmc_covering", "/workDir") 
   setwd(glob[["workDir"]]) 
-  instanceDirs = "../../../_data_tiny/bigraph/unate/" 
+  instancePath = "../../../_data/bigraph/unate/steiner3"
+  instanceDef = file.path(instancePath, "steiner3_009_12.cnfU")
   
+  unate_init_greedy(instanceDef, greedyId="chvatal_S")
+  unate_greedy_chvatal()
   
-}
-unate_greedy_chvatal_UB = function(instanceDef, valueTarget="") {
-  # # Assume C stores all column degrees
-  # Initialize d <- max(C)
-  # harmonicNum <- H(d)
-  # UB <- harmonicNum * BKV
-  # Return UB
+  unate_greedy_chvatal_experiment(instanceDef, replicateSize = 100, greedyId="chvatal_S")
+  unate_greedy_chvatal_experiment_distr(instanceDef, replicateSize = 10, greedyId="chvatal_S")
+  unate_greedy_chvatal_experiment_F_iso(instanceDef, replicateSize = 10)
+  unate_greedy_chvatal_UB(instanceDef)
   
-  thisFunction = "unate_greedy_chvatal_UB"
-  
-  unate_init_greedy(
-    instanceDef, greedyId="chvatal_S", valueTarget=valueTarget, 
-    replicateSize="")
-  
-  C = glob[['colDegs']]
-  BKV = glob[['valueTarget']]
-  d = max(C)
-  harmonicNum = sum(1/seq(d))
-  UB = harmonicNum * BKV
-  return(UB)
-  
-  
-} # unate_greedy_chvatal_UB
+} # all_tests_functions
 
-
-unate_init_greedy = function(instanceDef, greedyId="", valueTarget="",
+unate_init_greedy = function(instanceDef, greedyId="chvatal_F", valueTarget="",
                              replicateSize="", seedInit="") {
   
   # initialization for chvatal greedy algo
@@ -138,10 +57,6 @@ unate_init_greedy = function(instanceDef, greedyId="", valueTarget="",
   coordSizeLmt           =  2^nBits      ;#   => population size!!
   glob[["coordSizeLmt"]] =  coordSizeLmt ;#  print(glob)
   
-  # if (greedyId == "") {
-  #   greedyId = "random"
-  # } 
-  
   if (valueTarget == "") {
     valueTarget = as.numeric(bg_find_target_unate(instanceDef)$BKV[1])
   }
@@ -166,10 +81,10 @@ unate_init_greedy = function(instanceDef, greedyId="", valueTarget="",
 
 unate_greedy_chvatal = function() {
   
-  # main Chvatal algorithm that retrieves parameters from glob
+  # main Chvatal algorithm
   thisFunction = "unate_greedy_chvatal" 
   
-  # the best full matrix version of chvatal 
+  # parameters
   valueTarget    = glob[["valueTarget"]]
   replicateSize  = glob[["replicateSize"]]
   greedyId       = glob[["greedyId"]]
@@ -180,11 +95,9 @@ unate_greedy_chvatal = function() {
   colWeights     = glob[["colWeights"]]
   replicaId      = glob[["replicaId"]]
   
-  
+  # main implementation of chvatal algo
   glob[["nOps"]] = 0
-  
   start_time = Sys.time() 
-  
   while(TRUE) {
     percentages = colWeights / colSums(M) 
     if (all(percentages==Inf)) { break }
@@ -200,19 +113,16 @@ unate_greedy_chvatal = function() {
     coord[jdx]     = 1
     glob[["nOps"]] = glob[["nOps"]] + 1
   }
-  
   end_time = Sys.time() 
   runtime = round(as.numeric(difftime(end_time, start_time, units = "secs")), 3)
   
   # normalize colWeights
   normWeights = (colWeights-min(colWeights))/(max(colWeights)-min(colWeights))
-  
-  
+
   valueGreedy_norm = as.numeric(t(coord) %*% normWeights)
   valueGreedy = as.numeric(t(coord) %*% colWeights)
   coord = paste(coord, collapse = "")
   diff = valueGreedy - valueTarget  
-  
   glob[["valueGreedy"]] = valueGreedy
   
   dtPairs = data.table(
@@ -233,8 +143,8 @@ unate_greedy_chvatal_experiment = function(
   instanceDef, greedyId="chvatal_F", valueTarget="", replicateSize="", 
   isSeedConsecutive=T) 
 {
-  # given as single instanceDef, find all necessary info for chvatal algo with replication
   
+  # given as single instanceDef, find all necessary info for chvatal algo with replication
   thisFunction = "unate_greedy_chvatal_experiment"
   
   cat("\n.. ENTERING", thisFunction,  
@@ -556,10 +466,10 @@ unate_greedy_chvatal_experiment_F_iso = function(
   instanceDef,  OFname="OFb_unateF", greedyId="chvatal_F",  
   valueTarget="", replicateSize="", isSeedConsecutive=T) 
 {
-  #
-  #
+  # given as single instanceDef, find all necessary info for chvatal algo with replication
+  # using full matrix implementation and isomorph concepts to control the experiment
   thisFunction = "unate_greedy_chvatal_experiment_F_iso"
-  #
+  
   cat("\n.. ENTERING", thisFunction,  
       "\n        greedy unate cover solutions for", greedyId,
       "\n                  instance     =", basename(instanceDef),
@@ -773,11 +683,42 @@ unate_greedy_chvatal_experiment_F_iso = function(
   
 } # unate_greedy_chvatal_experiment_F_iso
 
-# fg_bgmc_unate_school_9_16.R   # MUST be sourced from github/_rlibR/_lib_R_resources.R
-
-
+unate_greedy_chvatal_UB = function(instanceDef, valueTarget="") {
+  # Idea retrieved from Chvatal's theorem: 
+  # Upper bound = best known value * harmonic number of max column degree
+  thisFunction = "unate_greedy_chvatal_UB"
+  
+  unate_init_greedy(
+    instanceDef, greedyId="chvatal_S", valueTarget=valueTarget, 
+    replicateSize="")
+  
+  C = glob[['colDegs']]
+  BKV = glob[['valueTarget']]
+  d = max(C)
+  harmonicNum = sum(1/seq(d))
+  UB = harmonicNum * BKV
+  return(UB)
+  
+} # unate_greedy_chvatal_UB
 
 #----Tables----
+all_tests_tables = function() {
+  source("~/__init_rBed_01.R")
+  rBedPath = glob[["rBedPath"]]  
+  glob[["workDir"]] = paste0(rBedPath, "/rBed_bgmc", "/bgmc_covering", "/workDir") 
+  setwd(glob[["workDir"]]) 
+  instancePath = "../../../_data/bigraph/unate/steiner3"
+  instanceDef = file.path(instancePath, "steiner3_009_12.cnfU")
+  
+  tb_unate_greedy_asym(instancePath, outputFolder = glob[["workDir"]],
+                       greedyId = "chvatal_S", valueTarget = "", replicateSize = 100)
+  
+  instanceRDS = "tb_unate_greedy_asym_chvatal.RDS"
+  tb_unate_greedy_asymp_to_latex(instanceRDS)
+  tb_unate_greedy_chvatal_experiment_bound(instanceDef)
+  
+} # all_tests_tables
+
 tb_unate_greedy_asym = function(instanceDir, 
                                 outputFolder,
                                 greedyId="chvatal_S", 
@@ -794,7 +735,6 @@ tb_unate_greedy_asym = function(instanceDir,
   for (dir in instanceDir) {
     files = c(files, list.files(instanceDir, pattern=".*.cnf"))
   }
-  
   
   dt = data.table()
   for (file in files) {
@@ -884,11 +824,11 @@ tb_unate_greedy_asym = function(instanceDir,
       "\n               dtExp = readRDS(\"", fileRDS, "\")",
       "\n")
   return(dt)
-}
+} # tb_unate_greedy_asym
 
 
-tb_unate_greedy_asymp_to_latex = function(instanceRDS, matchRDS=NA, isLatex=T) {
-  
+tb_unate_greedy_asymp_to_latex = function(instanceRDS, matchRDS=NA, isLatex=T) 
+{
   # convert RDS file generated by tb_unate_greedy_asym into latex format table
   thisFunction = "tb_unate_greedy_asymp_to_latex"
   
@@ -1003,14 +943,10 @@ tb_unate_greedy_asymp_to_latex = function(instanceRDS, matchRDS=NA, isLatex=T) {
       cat(line)
       
       cat("\n...Latex format ends...\n\n")
-      
     }
     
     return(dtInfo)
   }
-  
-  
-  
   
   if (isLatex) {
     cat("\n...Latex format start...\n\n")
@@ -1027,7 +963,7 @@ tb_unate_greedy_asymp_to_latex = function(instanceRDS, matchRDS=NA, isLatex=T) {
   }
   
   return(dtInfo)
-}
+} # tb_unate_greedy_asymp_to_latex
 
 tb_unate_greedy_chvatal_experiment_bound = function(
   instanceDef, greedyId="chvatal_F", valueTarget="",
@@ -1041,12 +977,10 @@ tb_unate_greedy_chvatal_experiment_bound = function(
       "\n        greedy unate cover solutions for", greedyId,
       "\n                      date     =",  date(), "\n\n")
   
-  
   clear(glob)
   unate_init_greedy(
     instanceDef, greedyId=greedyId, valueTarget="", 
     replicateSize="") 
-  
   
   valueTarget    = glob[["valueTarget"]]
   runtime_read = glob[["runtime_read"]]
@@ -1076,78 +1010,22 @@ tb_unate_greedy_chvatal_experiment_bound = function(
 } # tb_unate_greedy_chvatal_experiment_bound
 
 
-
 #-----Figures-----
-
-fg_bgmc_unate_greedy_chvatal_iso_distr_school_9_11 = function() {
+all_tests_figures = function() {
+  source("~/__init_rBed_01.R")
+  rBedPath = glob[["rBedPath"]]  
+  glob[["workDir"]] = paste0(rBedPath, "/rBed_bgmc", "/bgmc_covering", "/workDir") 
+  setwd(glob[["workDir"]]) 
   
-  # 1
-  dt1 = data.table(x = c("R", "A", "B", "C", "D", "E", "F", "G"),
-                   y.x = rep(0,8),
-                   y.y = c(0.3311,  0.3417,  0.3370,  0.3311,  0.3259,  0.3327,  0.3450,  0.3346))
+  fg_bgmc_upper_bound_steiner()
+  fg_bgmc_unate_greedy_chvatal_abcd()
   
-  dt1$x <- factor(dt1$x,levels = c("R", "A", "B", "C", "D", "E", "F", "G"))
-  
-  p1 = ggplot(data=dt1, aes(x=x))  +
-    geom_segment(aes(x = x, y = y.x, xend = x, yend = y.y), col="red", lwd=1) + 
-    geom_point(y=dt1$y.x) + 
-    geom_point(y=dt1$y.y) +
-    scale_y_continuous(breaks=seq(0.0, 0.6, 0.1), limits=c(0, 0.52)) +
-    labs(x="1.00", y="empirical distribution") +
-    theme(plot.title = element_text(size=10, hjust = 0.5), legend.title = element_blank())
-  
-  # 1.25
-  dt1 = data.table(x = c("R", "A", "B", "C", "D", "E", "F", "G"),
-                   y.x = rep(0,8),
-                   y.y = c(0.4998,  0.4939,  0.4967,  0.4998,  0.5100,  0.5023,  0.4863,  0.4976))
-  
-  dt1$x <- factor(dt1$x,levels = c("R", "A", "B", "C", "D", "E", "F", "G"))
-  
-  # sp1_tb = data.table(instance = "school_9_16.cnfW", solver = "chvatal_stochastic", 
-  #                     replicateSize = 1000, numColumns=9)
-  
-  p2 = ggplot(data=dt1, aes(x=x))  +
-    geom_segment(aes(x = x, y = y.x, xend = x, yend = y.y), col="red", lwd=1) + 
-    geom_point(y=dt1$y.x) + 
-    geom_point(y=dt1$y.y) +
-    scale_y_continuous(breaks=seq(0.0, 0.6, 0.1), limits=c(0, 0.52)) +
-    labs(x="1.25", y="empirical distribution")+
-    theme(plot.title = element_text(size=10, hjust = 0.5), legend.title = element_blank())
-  
-  # 1.50
-  dt1 = data.table(x = c("R", "A", "B", "C", "D", "E", "F", "G"),
-                   y.x = rep(0,8),
-                   y.y = c(0.1691,   0.1644,  0.1663,  0.1691,  0.1641,  0.1650,  0.1687,  0.1678))
-  
-  dt1$x <- factor(dt1$x,levels = c("R", "A", "B", "C", "D", "E", "F", "G"))
-  
-  # sp1_tb = data.table(instance = "school_9_16.cnfW", solver = "chvatal_stochastic", 
-  #                     replicateSize = 1000, numColumns=9)
-  
-  p3 = ggplot(data=dt1, aes(x=x))  +
-    geom_segment(aes(x = x, y = y.x, xend = x, yend = y.y), col="red", lwd=1) + 
-    geom_point(y=dt1$y.x) + 
-    geom_point(y=dt1$y.y) +
-    # ylim(0, 0.55) +
-    scale_y_continuous(breaks=seq(0.0, 0.6, 0.1), limits=c(0, 0.52)) +
-    labs(x="1.50", y="empirical distribution")+
-    theme(plot.title = element_text(size=10, hjust = 0.5), legend.title = element_blank())
-  
-  
-  sp = grid.arrange(p1, p2, p3, nrow=1,
-                    top = textGrob(paste("fg_bgmc_unate_greedy_chvatal_iso_distr_school_9_11"),
-                                   x = 0.04, y = 0, hjust = 0,
-                                   gp=gpar(fontsize=8,font=1, col="gray47")),
-                    bottom = textGrob(paste("ratio = valueGreedy/bestKnownValue"),
-                                      #x = 0.04, y = 0, hjust = 0,
-                                      y = 0.8,
-                                      gp=gpar(fontsize=12,font=1, col="black")))
-  
-  ggsave("fg_bgmc_unate_greedy_chvatal_iso_distr_school_9_11.pdf", sp, width = 14, height = 3.5)
-  # annotation_custom(tableGrob(t(sp1_tb)), xmin = 1.237, ymin=0.322,)
-}
+} # all_tests_figures
 
 fg_bgmc_upper_bound_steiner = function() {
+  
+  # generate upper bound for steiner instances from steiner3 folder (hardwired)
+  thisFunction = "fg_bgmc_upper_bound_steiner"
   dt = data.table()
   
   dt$nCols = c(9, 15, 27, 45, 81, 135, 243, 405, 729)
@@ -1166,11 +1044,13 @@ fg_bgmc_upper_bound_steiner = function() {
           legend.title = element_blank())
   
   ggsave("fg_bgmc_upper_bound_steiner.pdf", p1, width = 14, height = 3.5)
-}
+} # fg_bgmc_upper_bound_steiner
 
 fg_bgmc_unate_greedy_chvatal_abcd = function() {
   
+  # generate greedy chvatal figures (hardwired)
   # school_9_16.cnfW
+  thisFunction = "fg_bgmc_unate_greedy_chvatal_abcd"
   dt1 = data.table(
     x = c(1,    1, 1.05,  1.05, 1.15, 1.15, 1.40),
     y = c(0, 296,     0,   486,    0,  219, 486)/1000
@@ -1334,39 +1214,29 @@ fg_bgmc_unate_greedy_chvatal_abcd = function() {
   
   ggsave("fg_bgmc_unate_greedy_chvatal_cd.pdf", p1, width = 14, height = 3.5)
   
-}
-
-
+} # fg_bgmc_unate_greedy_chvatal_abcd
 
 #----school_9_16 example----
-
-all_tests = function()
+all_tests_school_9_16 = function()
 { 
   # cut and paste into the R-shell any group of these commands
+  source("~/__init_rBed_01.R")
+  rBedPath = glob[["rBedPath"]]  
+  glob[["workDir"]] = paste0(rBedPath, "/rBed_bgmc", "/bgmc_covering", "/workDir") 
+  setwd(glob[["workDir"]]) 
   
-  rm(list=ls())
-  workDir = "~/DeskTop/github/__rBed_latex/_Figures/fg_bgmc" ; setwd(workDir)
-  lib_R_dir     = "../../../_lib_R"
-  source(file.path(lib_R_dir, "_lib_R_resources.R"))
   data_rBed_dir   = "../../../_data_rBed"
   fileRDS_dtPairs = file.path(data_rBed_dir, "OFb_unateF_exh_school_9_16.cnfW_dtPairs.RDS")
   fileRDS_dt      = file.path(data_rBed_dir, "OFb_unateF_exh_school_9_16.cnfW_dt.RDS")
-  source(file.path(workDir, "fg_bgmc_unate_school_9_16.R" ))
+  
   fg_bgmc_unate_school_9_16_index(fileRDS_dtPairs, fileRDS_dt)
-  
-  rm(list=ls())
-  workDir = "~/DeskTop/github/__rBed_latex/_Figures/fg_bgmc" ; setwd(workDir)
-  lib_R_dir     = "../../../_lib_R"
-  source(file.path(lib_R_dir, "_lib_R_resources.R"))
-  data_rBed_dir   = "../../../_data_rBed"
-  fileRDS_dtPairs = file.path(data_rBed_dir, "OFb_unateF_exh_school_9_16.cnfW_dtPairs.RDS")
-  fileRDS_dt      = file.path(data_rBed_dir, "OFb_unateF_exh_school_9_16.cnfW_dt.RDS")
-  source(file.path(workDir, "fg_bgmc_unate_school_9_16.R" ))
   fg_bgmc_unate_school_9_16_rank(fileRDS_dtPairs, fileRDS_dt)
   
 } # all_tests = function()
 
-fg_bgmc_unate_school_9_16_index_gg = function(fileRDS_dtPairs, fileRDS_dt) {
+fg_bgmc_unate_school_9_16_index_gg = function(fileRDS_dtPairs, fileRDS_dt) 
+{
+  # ggplot version
   thisFunction = "fg_bgmc_unate_school_9_16_index_gg"
   
   dtPairs = readRDS(fileRDS_dtPairs)
@@ -1408,10 +1278,11 @@ fg_bgmc_unate_school_9_16_index_gg = function(fileRDS_dtPairs, fileRDS_dt) {
   ggsave("fg_bgmc_unate_school_9_16_b.pdf", p, width = 7, height = 5)
   
   
-}
+} # fg_bgmc_unate_school_9_16_index_gg
 
-fg_bgmc_unate_school_9_16_rank_gg = function(fileRDS_dtPairs, fileRDS_dt) {
-  
+fg_bgmc_unate_school_9_16_rank_gg = function(fileRDS_dtPairs, fileRDS_dt) 
+{
+  # ggplot version
   thisFunction = "fg_bgmc_unate_school_9_16_rank_gg"
   
   dtPairs = readRDS(fileRDS_dtPairs)
@@ -1505,11 +1376,10 @@ fg_bgmc_unate_school_9_16_rank_gg = function(fileRDS_dtPairs, fileRDS_dt) {
   # filePdf = paste(watermark, ".pdf", sep="")
   # cat("\n... save this plot as", filePdf, "\n\n")
   
-}
+} # fg_bgmc_unate_school_9_16_rank_gg
 
 fg_bgmc_unate_school_9_16_index = function(fileRDS_dtPairs, fileRDS_dt)
 {
-  # ...
   thisFunction = "fg_bgmc_unate_school_9_16_index"
   
   dtPairs = readRDS(fileRDS_dtPairs)
@@ -1627,46 +1497,100 @@ fg_bgmc_unate_school_9_16_rank = function(fileRDS_dtPairs, fileRDS_dt)
   
 } # fg_bgmc_unate_school_9_16_rank
 
-# fg_bgmc_unate_school_9_16.R   # MUST be sourced from github/_rlibR/_lib_R_resources.R
-
-
 
 #----school_9_11 example----
 all_tests = function()
 { 
   # cut and paste into the R-shell any group of these commands
   
-  rm(list=ls())
-  workDir = "~/DeskTop/github/__rBed_latex/_Figures/fg_bgmc" ; setwd(workDir)
-  lib_R_dir     = "../../../_lib_R"
-  source(file.path(lib_R_dir, "_lib_R_resources.R"))
+  source("~/__init_rBed_01.R")
+  rBedPath = glob[["rBedPath"]]  
+  glob[["workDir"]] = paste0(rBedPath, "/rBed_bgmc", "/bgmc_covering", "/workDir") 
+  setwd(glob[["workDir"]]) 
+  
   data_rBed_dir   = "../../../_data_rBed"
-  # fileRDS_dtP = file.path(data_rBed_dir, "OFb_unateF_exh_school_9_16.cnfU_dtPairs.RDS")
-  # fileRDS_dtE     = file.path(data_rBed_dir, "OFb_unateF_exh_school_9_16.cnfU_dt.RDS")
   fileRDS_dtP     = file.path(workDir, "OFb_unateF_exh_school_9_11.cnfU_dtPairs.RDS")
   fileRDS_dtE     = file.path(workDir, "OFb_unateF_exh_school_9_11.cnfU_dt.RDS")
-  source(file.path(workDir, "fg_bgmc_unate_school_9_11.R" ))
+  fg_bgmc_unate_school_9_11_index_gray_gg(fileRDS_dtP, fileRDS_dtE)
+  fg_bgmc_unate_school_9_11_rank_gray_gg(fileRDS_dtP, fileRDS_dtE)
   fg_bgmc_unate_school_9_11_index_gray(fileRDS_dtP, fileRDS_dtE)
-  
-  rm(list=ls())
-  workDir = "~/DeskTop/github/__rBed_latex/_Figures/fg_bgmc" ; setwd(workDir)
-  lib_R_dir     = "../../../_lib_R"
-  source(file.path(lib_R_dir, "_lib_R_resources.R"))
-  fileRDS_dtP     = file.path(workDir, "OFb_unateF_exh_school_9_11.cnfU_dtPairs.RDS")
-  fileRDS_dtE     = file.path(workDir, "OFb_unateF_exh_school_9_11.cnfU_dt.RDS")
-  source(file.path(workDir, "fg_bgmc_unate_school_9_11.R" ))
   fg_bgmc_unate_school_9_11_rank_gray(fileRDS_dtP, fileRDS_dtE)
-  
-  rm(list=ls())
-  workDir = "~/DeskTop/github/__rBed_latex/_Figures/fg_bgmc" ; setwd(workDir)
-  lib_R_dir     = "../../../_lib_R"
-  source(file.path(lib_R_dir, "_lib_R_resources.R"))
-  source(file.path(workDir, "fg_bgmc_unate_school_9_11.R" ))
   fg_bgmc_school_9_11_walk_gray()
+  
   
 } # all_tests = function()
 
-fg_bgmc_unate_school_9_11_index_gray_gg = function(fileRDS_dtPairs, fileRDS_dt) {
+fg_bgmc_unate_greedy_chvatal_iso_distr_school_9_11 = function() 
+{
+  
+  thisFunction = "fg_bgmc_unate_greedy_chvatal_iso_distr_school_9_11"
+  dt1 = data.table(x = c("R", "A", "B", "C", "D", "E", "F", "G"),
+                   y.x = rep(0,8),
+                   y.y = c(0.3311,  0.3417,  0.3370,  0.3311,  0.3259,  0.3327,  0.3450,  0.3346))
+  
+  dt1$x <- factor(dt1$x,levels = c("R", "A", "B", "C", "D", "E", "F", "G"))
+  
+  p1 = ggplot(data=dt1, aes(x=x))  +
+    geom_segment(aes(x = x, y = y.x, xend = x, yend = y.y), col="red", lwd=1) + 
+    geom_point(y=dt1$y.x) + 
+    geom_point(y=dt1$y.y) +
+    scale_y_continuous(breaks=seq(0.0, 0.6, 0.1), limits=c(0, 0.52)) +
+    labs(x="1.00", y="empirical distribution") +
+    theme(plot.title = element_text(size=10, hjust = 0.5), legend.title = element_blank())
+  
+  # 1.25
+  dt1 = data.table(x = c("R", "A", "B", "C", "D", "E", "F", "G"),
+                   y.x = rep(0,8),
+                   y.y = c(0.4998,  0.4939,  0.4967,  0.4998,  0.5100,  0.5023,  0.4863,  0.4976))
+  
+  dt1$x <- factor(dt1$x,levels = c("R", "A", "B", "C", "D", "E", "F", "G"))
+  
+  # sp1_tb = data.table(instance = "school_9_16.cnfW", solver = "chvatal_stochastic", 
+  #                     replicateSize = 1000, numColumns=9)
+  
+  p2 = ggplot(data=dt1, aes(x=x))  +
+    geom_segment(aes(x = x, y = y.x, xend = x, yend = y.y), col="red", lwd=1) + 
+    geom_point(y=dt1$y.x) + 
+    geom_point(y=dt1$y.y) +
+    scale_y_continuous(breaks=seq(0.0, 0.6, 0.1), limits=c(0, 0.52)) +
+    labs(x="1.25", y="empirical distribution")+
+    theme(plot.title = element_text(size=10, hjust = 0.5), legend.title = element_blank())
+  
+  # 1.50
+  dt1 = data.table(x = c("R", "A", "B", "C", "D", "E", "F", "G"),
+                   y.x = rep(0,8),
+                   y.y = c(0.1691,   0.1644,  0.1663,  0.1691,  0.1641,  0.1650,  0.1687,  0.1678))
+  
+  dt1$x <- factor(dt1$x,levels = c("R", "A", "B", "C", "D", "E", "F", "G"))
+  
+  # sp1_tb = data.table(instance = "school_9_16.cnfW", solver = "chvatal_stochastic", 
+  #                     replicateSize = 1000, numColumns=9)
+  
+  p3 = ggplot(data=dt1, aes(x=x))  +
+    geom_segment(aes(x = x, y = y.x, xend = x, yend = y.y), col="red", lwd=1) + 
+    geom_point(y=dt1$y.x) + 
+    geom_point(y=dt1$y.y) +
+    # ylim(0, 0.55) +
+    scale_y_continuous(breaks=seq(0.0, 0.6, 0.1), limits=c(0, 0.52)) +
+    labs(x="1.50", y="empirical distribution")+
+    theme(plot.title = element_text(size=10, hjust = 0.5), legend.title = element_blank())
+  
+  
+  sp = grid.arrange(p1, p2, p3, nrow=1,
+                    top = textGrob(paste("fg_bgmc_unate_greedy_chvatal_iso_distr_school_9_11"),
+                                   x = 0.04, y = 0, hjust = 0,
+                                   gp=gpar(fontsize=8,font=1, col="gray47")),
+                    bottom = textGrob(paste("ratio = valueGreedy/bestKnownValue"),
+                                      #x = 0.04, y = 0, hjust = 0,
+                                      y = 0.8,
+                                      gp=gpar(fontsize=12,font=1, col="black")))
+  
+  ggsave("fg_bgmc_unate_greedy_chvatal_iso_distr_school_9_11.pdf", sp, width = 14, height = 3.5)
+  # annotation_custom(tableGrob(t(sp1_tb)), xmin = 1.237, ymin=0.322,)
+} # fg_bgmc_unate_greedy_chvatal_iso_distr_school_9_11
+
+fg_bgmc_unate_school_9_11_index_gray_gg = function(fileRDS_dtPairs, fileRDS_dt) 
+{
   thisFunction = "fg_bgmc_unate_school_9_11_index_gray_gg"
   
   dtPairs = readRDS(fileRDS_dtPairs)
@@ -1711,7 +1635,8 @@ fg_bgmc_unate_school_9_11_index_gray_gg = function(fileRDS_dtPairs, fileRDS_dt) 
   
 } # fg_bgmc_unate_school_9_11_index_gray_gg
 
-fg_bgmc_unate_school_9_11_rank_gray_gg = function(fileRDS_dtPairs, fileRDS_dt) {
+fg_bgmc_unate_school_9_11_rank_gray_gg = function(fileRDS_dtPairs, fileRDS_dt) 
+{
   
   thisFunction = "fg_bgmc_unate_school_9_11_rank_gray_gg"
   
@@ -1810,7 +1735,6 @@ fg_bgmc_unate_school_9_11_rank_gray_gg = function(fileRDS_dtPairs, fileRDS_dt) {
 
 fg_bgmc_unate_school_9_11_index_gray = function(fileRDS_dtPairs, fileRDS_dt)
 {
-  # ...
   thisFunction = "fg_bgmc_unate_school_9_11_index_gray"
   
   dtP   = readRDS(fileRDS_dtPairs)
@@ -1851,7 +1775,6 @@ fg_bgmc_unate_school_9_11_index_gray = function(fileRDS_dtPairs, fileRDS_dt)
 
 fg_bgmc_unate_school_9_11_rank_gray = function(fileRDS_dtPairs, fileRDS_dt)
 {
-  # ...
   thisFunction = "fg_bgmc_unate_school_9_11_rank"
   
   dtP   = readRDS(fileRDS_dtPairs)
@@ -2026,8 +1949,7 @@ fg_bgmc_unate_school_9_11_rank_gray = function(fileRDS_dtPairs, fileRDS_dt)
   filePdf = paste(watermark, ".pdf", sep="")
   cat("\n... save this plot as", filePdf, "\n\n")
   
-} # fg_bgmc_unate_school_9_11_rank
-
+} # fg_bgmc_unate_school_9_11_rank_gray
 
 fg_bgmc_school_9_11_walk_gray = function()
 {
