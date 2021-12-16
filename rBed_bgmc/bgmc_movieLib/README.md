@@ -1,4 +1,4 @@
-# Description
+## Description
 bgmc_movieLib is from a junior-level class project, PackFlix, focusing on data structures and algorithms. In rBed_bgmc, we explored the impact of data structures on runtime performance between Java and R. The data for bgmc_movieLib, modified for educational purposes, originated with IMDb. The project objective was to not only analyze the watching histories of customers by designing a software prototype PackFlix in Java. The primary objective was to study the impact of data structures on the asymptotic runtime performance to create lists such as the top 10 most frequently watched movies. The primary input to PackFlix is a directory path to movieLib which contains file pairs of increasing size: movieRecords and watchRecords.
 
 ## Structure
@@ -27,7 +27,7 @@ bgmc_movieLib is from a junior-level class project, PackFlix, focusing on data s
     * To reproduce our results in R shell or RStudio, simply check **all_tests_GROUP** inside the code. There are detailed commands for running the program. 
     * **For linux users, under construction...**
 
-# Instruction
+## Instruction
 Here are two examples for running the jar file and R program.
 
 ## bgmc_movieLib.jar
@@ -168,6 +168,6 @@ Once we install **__init_rBed_01.R** in our home directory, we can proceed the f
   fg_bgmc_movieLib_best10_occurrence(instanceDef)
 ```
 
-# Limitation
+## Limitation
 For the current version of movieLib in R, we need to download the entire rBed_01 and place it on our Desktop. Mac users can easily install, while other users may need to make some modifications to the code, specifically, correcting the path in **__init_rBed_01.R** from home directory and **__lib_R_resources.R** from _lib_R in rBed_01, so that the program will execute correctly.
 
