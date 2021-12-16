@@ -1,0 +1,17 @@
+c file = cormen_4_5.cnfU (cnfU = unate cnf format) 
+c from IntroDuction to Algorithms, Cormen & Leiserson & Rivest, MIT 1990, Figure 27.9, page 602
+c cnf  = formula  in a conjuctive normal form 
+c see https://fairmut3x.wordpress.com/2011/07/29/cnf-conjunctive-normal-form-dimacs-format-explained/
+c
+c solutionsBestCnt = 1 
+c [1] "1010,2"
+c  
+c max_matching_size = 3 (edges row2->cpl1, row3->col2, col56->col3)
+c  
+c 1 2 3 4  
+p cnfU  4 5
+  1        0
+  1   3    0
+    2 3 4  0
+      3    0
+      3    0

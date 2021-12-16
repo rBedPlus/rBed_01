@@ -1,0 +1,29 @@
+c instanceDef_iso = ruler_9_22_5_2__2.cnfU 
+c isomorph instance, id = 2 
+c created by  bg_isomorph_cnf  on  Thu Mar 11 19:24:07 2021 
+c coordP_0  = 1,2,3,4,5,6,7,8,9 
+c coordP_id = 5,7,6,8,1,9,4,2,3 
+c  
+p cnfU 9 22
+1 8 0
+1 5 0
+2 3 0
+3 4 5 0
+3 6 0
+1 2 0
+1 2 4 8 0
+1 4 6 8 0
+6 8 0
+2 9 0
+4 9 0
+6 9 0
+2 7 0
+4 7 0
+6 7 0
+2 5 0
+4 5 0
+5 7 8 9 0
+1 3 9 0
+5 7 8 9 0
+1 7 0
+5 8 0

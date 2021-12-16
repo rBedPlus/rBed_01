@@ -1,0 +1,27 @@
+# file = _BKV_unate.R ;# best-known-values of minimum cover for this directory
+# Franc Brglez
+# dateLast = "Sat Mar 20 15:10:10 2021"
+#
+
+instanceDef = m100_50_10_10.cnfU
+BKV = 8
+
+instanceDef = m100_100_10_10.cnfU
+BKV = 12
+
+instanceDef = m100_100_10_15.cnfU
+BKV = 10
+
+instanceDef = m100_100_10_30.cnfU
+BKV = 9
+
+instanceDef = m100_100_30_30.cnfU
+BKV = 6
+
+instanceDef = m200_100_10_30.cnfU
+BKV = 11
+
+instanceDef = m200_100_30_50.cnfU
+BKV = 6
+
+

@@ -1,0 +1,42 @@
+c file = wiki_7_6_3_10.cnfU (cnfU = unate cnf format) 
+c this instance is a "dual" of the primary instance introduced in
+c https://en.wikipedia.org/wiki/Exact_cover
+c For the dual instance file, see the file wiki_6_7_3_6.cnfU 
+c
+c > path = paste(globPath[['rBed']], "proj_bgc/workDir", sep="") ; setwd(path)  
+c >   source("../../_libTop_R/_libTop_R_resources.R") ; source("../_lib_R/bgc.R")
+c >   instanceDef = "../../_data/bigraph/misc/wiki_7_6_3_10.cnfU"
+c >   bgcB_OF_exh(instanceDef, isPlot_OF=F)
+c 
+c .. initialized instance as incidence 'matrixI' under global array glob
+c .. reading all binary coordinates from file
+c ../../_data/coordBinary/bina_07.txt 
+c Read 128 items
+c      index   coord value
+c   1:     0 0000000    13
+c   2:     1 0000001    10
+c   3:     2 0000010    12
+c   4:     3 0000011    10
+c   5:     4 0000100    12
+c  ---                    
+c 124:   123 1111011     6
+c 125:   124 1111100     5
+c 126:   125 1111101     6
+c 127:   126 1111110     6
+c 128:   127 1111111     7
+c 
+c  solutionsBestCnt = 10 
+c  [1] "0001011,3" "0001101,3" "0011001,3" "0101010,3" "0101100,3" "0111000,3"
+c  [7] "1000011,3" "1000101,3" "1010001,3" "1100100,3"
+c 
+c  solutionsForestCnt = 1 
+c [1] "1100100,3"
+c
+c 1 2 3 4 5 6 7 
+p cnfU  7 6
+  1     4     7 0
+  1     4       0
+        4 5   7 0
+      3   5 6   0
+    2 3     6 7 0
+    2         7 0

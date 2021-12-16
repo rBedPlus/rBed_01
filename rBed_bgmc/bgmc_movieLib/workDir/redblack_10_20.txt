@@ -1,0 +1,15 @@
+# file               = /Users/liyixin/Desktop/rBed_01/rBed_bgmc/bgmc_movieLib/workDir/redblack_10_20.txt
+# userId             = liyixin
+# cpuName            = x86_64
+# sysName            = Easons-MacBook-Air.local
+# data_type          = RedBlack
+# date               = 2021/12/14 23:37:56
+# homeDir            = /Users/liyixin
+# userDir            = /Users/liyixin/Desktop/rBed_01/rBed_bgmc/bgmc_movieLib
+Size(2^x),Java_read_RedBlack,Java_search_RedBlack
+10,0.496,0.035
+12,0.444,0.036
+14,1.404,0.083
+16,3.016,0.316
+18,14.835,1.426
+20,57.88,8.425

@@ -1,0 +1,135 @@
+# file = _BKV_bgcover.R ;# best-known-values of minimum cover for this directory
+# Franc Brglez
+# dateLast = Wed Jun  2 03:05:41 2021
+#
+
+instanceDef = scpb1.cnfU
+BKV = 22
+# scpb1.cnfU is originally from scpb1.cnfW, where the weight for each column is 1
+#
+# BKV from Resenda's Genetic Algorithm = 25, found by 2 hour limit run in 200 generations in VCL. 
+#
+# BKV from Chvatal Algorithm = 22, found by 10,000 replications in VCL, No other paper reports this result
+#
+# VCL runtime = 3078 sec
+# Generation let = 200
+# vcl_runtime / num_generation_lmt = 15.39 sec / generation
+#
+
+instanceDef = scpc1.cnfU
+BKV = 44
+# scpc1.cnfU is originally from scpc1.cnfW, where the weight for each column is 1
+#
+# BKV from Resenda's Genetic Algorithm = 47, found by 2 hour limit run in 200 generations in VCL. 
+#
+# BKV from Chvatal Algorithm = 44, found by 10,000 replications in VCL
+#
+# Choose the min BKV, which is 44; No other paper reports this result
+#
+# VCL runtime = 4764 sec
+# Generation let = 200
+# vcl_runtime / num_generation_lmt = 23.82 sec / generation
+ 
+instanceDef = scpd1.cnfU
+BKV = 25
+# scpd1.cnfU is originally from scpd1.cnfW, where the weight for each column is 1
+#
+# BKV from Resenda's Genetic Algorithm = 27, found by 2 hour limit run in 200 generations in VCL. 
+#
+# BKV from Chvatal Algorithm = 25, found by 10,000 replications in VCL
+#
+# Choose the min BKV, which is 25; No other paper reports this result
+#
+# VCL runtime = 5713 sec
+# Generation let = 200
+# vcl_runtime / num_generation_lmt = 28.565 sec / generation
+
+instanceDef = scpb1.cnfW
+BKV = 69
+# scpb1.cnfW from orlib library, found here: http://people.brunel.ac.uk/~mastjjb/jeb/info.html
+#
+# BKV from Resenda's Genetic Algorithm = 69, found by 2 hour limit run in 200 generations in VCL. 
+#
+# BKV from Chvatal Algorithm = 72, found by 10,000 replications in VCL
+#
+# Choose the min BKV, which is 69
+#
+# Paper provides the result here: https://www.researchgate.net/publication/262811270_Application_of_the_Artificial_Bee_Colony_Algorithm_for_Solving_the_Set_Covering_Problem
+#
+# VCL runtime = 2505 sec
+# Generation let = 200
+# vcl_runtime / num_generation_lmt = 12.525 sec / generation
+
+instanceDef = scpc1.cnfW
+BKV = 227
+# scpc1.cnfW from orlib library, found here: http://people.brunel.ac.uk/~mastjjb/jeb/info.html
+#
+# BKV from Resenda's Genetic Algorithm = 227, found by 2 hour limit run in 200 generations in VCL. 
+#
+# BKV from Chvatal Algorithm = 249, found by 10,000 replications in VCL
+#
+# Choose the min BKV, which is 227
+#
+# Paper provides the result here: https://www.researchgate.net/publication/262811270_Application_of_the_Artificial_Bee_Colony_Algorithm_for_Solving_the_Set_Covering_Problem
+#
+# VCL runtime = 5274 sec
+# Generation let = 200
+# vcl_runtime / num_generation_lmt = 26.37 sec / generation
+
+instanceDef = scpd1.cnfW
+BKV = 60
+# scpc1.cnfW from orlib library, found here: http://people.brunel.ac.uk/~mastjjb/jeb/info.html
+#
+# BKV from Resenda's Genetic Algorithm = 60, found by 2 hour limit run in 200 generations in VCL. 
+#
+# BKV from Chvatal Algorithm = 66, found by 10,000 replications in VCL
+#
+# Choose the min BKV, which is 60
+#
+# Paper provides the result here: https://www.researchgate.net/publication/262811270_Application_of_the_Artificial_Bee_Colony_Algorithm_for_Solving_the_Set_Covering_Problem
+#
+# VCL runtime = 5377 sec
+# Generation let = 200
+# vcl_runtime / num_generation_lmt = 26.885 sec / generation
+
+instanceDef = scp41_6312.cnfW
+BKV = 302
+
+instanceDef = scp41.cnfW
+BKV = 429
+
+instanceDef = scp42.cnfW
+BKV = 512
+
+instanceDef = scp43.cnfW
+BKV = 516
+
+instanceDef = scp44.cnfW
+BKV = 494
+
+instanceDef = scp45.cnfW
+BKV = 512
+
+instanceDef = scp46.cnfW
+BKV = 560
+
+instanceDef = scp47.cnfW
+BKV = 430
+
+instanceDef = scp48.cnfW
+BKV = 492
+
+instanceDef = scp49.cnfW
+BKV = 641
+
+instanceDef = scp51.cnfW
+BKV = 253
+
+instanceDef = scp61.cnfW
+BKV = 138
+
+instanceDef = scpa1.cnfW
+BKV = 253
+
+instanceDef = scpe1.cnfU
+BKV = 5

@@ -1,0 +1,39 @@
+c file = school_15_16.cnfW 
+c  
+c solutionsBestCnt = 2 
+c[1] "100010101100001,9.5" "100010101100010,9.5"
+c [1] ".. returning from function OFb_bgcu_exh"
+c Read 32768 items                                            
+c nOps             "32768"                                           
+c runtime          "16.819"                                          
+c nOpsPerSec       "1948.3"                                          
+c > 
+c                    teachers
+c                 1 2 3 4 5 6 7
+c  1:english      x x
+c  2:geography    x   x x
+c  3:history      x     x     x  
+c  4:math                 x
+c  5:chemistry              x x
+c  6:physics            x x
+c  7:music          x         x
+c  8:physEd                   x
+c
+p cnfW  15 16
+1.5 2.5 1.5 3 2.5 1 1.5 1 1 2 1 1 1 1 1 
+1 2           0
+1   3 4       0
+1     4     7 0
+        5     0
+          6 7 0
+      4 5     0
+  2         7 0
+        5     8 0
+  2             9 0
+    3 4       8 9 0
+      4           10 0
+    3 4           10 11 0
+  2     5         10    12 0
+  2     5               12 13 0
+                  10          14 15 0
+                              14 15 0

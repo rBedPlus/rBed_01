@@ -1,0 +1,266 @@
+> path = paste(globPath[['rBed']], "proj_bgc/workDir", sep="") ; setwd(path)  
+>   source("../../_libTop_R/_libTop_R_resources.R") ; source("../_lib_R/bgc.R")
+>   instanceDef = "../../_data/bigraph/misc/cormen_4_5_2_1.cnfU"
+>   bgcB_OF_exh(instanceDef, isPlot_OF=F)
+
+.. initialized instance as incidence 'matrixI' under global array glob
+.. reading all binary coordinates from file
+ ../../_data/coordBinary/bina_04.txt 
+Read 16 items
+
+.. initializing runtime with 'tic' before invoking bgcB_OF_exh 
+.. computatation completed: 0.029 sec elapsed
+   index coord value
+1:     0  0000     9
+2:     1  0001     9
+3:     2  0010     6
+4:     3  0011     7
+5:     4  0100     9
+6:     5  0101    10
+ --- 
+   index coord value
+1:    10  1010     2
+2:    11  1011     3
+3:    12  1100     8
+4:    13  1101     9
+5:    14  1110     3
+6:    15  1111     4
+
+ thisFunction   = bgcB_OF_exh 
+ userId         = brglez 
+ cpuName        = francs-imac-pro.lan 
+ sysName        = Darwin 
+ dateStamp      = Wed Feb 10 19:46:57 2021 
+ instanceDef    = ../../_data/bigraph/misc/cormen_4_5_2_1.cnfU 
+   nOps         = 16 
+   runtime      = 0.029 
+   nOpsPerSec   = 551.7 
+   valueBest    = 2 
+
+ solutionsBestCnt = 1 
+[1] "1010,2"
+ --- 
+[1] "1010,2"
+
+ solutionsForestCnt = 0 
+NULL
+ --- 
+NULL
+[1] ".. returning from function bgcB_OF_exh"
+> 
+
+
+> path = paste(globPath[['rBed']], "proj_bgc/workDir", sep="") ; setwd(path)  
+>   source("../../_libTop_R/_libTop_R_resources.R") ; source("../_lib_R/bgc.R")
+>   instanceDef = "../../_data/bigraph/misc/wiki_6_7_3_6.cnfU"
+>   bgcB_OF_exh(instanceDef, isPlot_OF=F)
+
+.. initialized instance as incidence 'matrixI' under global array glob
+.. reading all binary coordinates from file
+ ../../_data/coordBinary/bina_06.txt 
+Read 64 items
+
+.. initializing runtime with 'tic' before invoking bgcB_OF_exh 
+.. computatation completed: 0.04 sec elapsed
+   index  coord value
+1:     0 000000    13
+2:     1 000001    12
+3:     2 000010    10
+4:     3 000011    11
+5:     4 000100    11
+6:     5 000101    10
+ --- 
+   index  coord value
+1:    58 111010     4
+2:    59 111011     5
+3:    60 111100    11
+4:    61 111101     5
+5:    62 111110     5
+6:    63 111111     6
+
+ thisFunction   = bgcB_OF_exh 
+ userId         = brglez 
+ cpuName        = francs-imac-pro.lan 
+ sysName        = Darwin 
+ dateStamp      = Wed Feb 10 19:51:39 2021 
+ instanceDef    = ../../_data/bigraph/misc/wiki_6_7_3_6.cnfU 
+   nOps         = 64 
+   runtime      = 0.04 
+   nOpsPerSec   = 1600 
+   valueBest    = 3 
+
+ solutionsBestCnt = 6 
+[1] "010101,3" "010110,3" "011010,3" "100101,3" "100110,3" "101010,3"
+ --- 
+[1] "010101,3" "010110,3" "011010,3" "100101,3" "100110,3" "101010,3"
+
+ solutionsForestCnt = 1 
+[1] "010101,3"
+ --- 
+[1] "010101,3"
+[1] ".. returning from function bgcB_OF_exh"
+> 
+
+
+> path = paste(globPath[['rBed']], "proj_bgc/workDir", sep="") ; setwd(path)  
+>   source("../../_libTop_R/_libTop_R_resources.R") ; source("../_lib_R/bgc.R")
+>   instanceDef = "../../_data/bigraph/misc/wiki_7_6_3_10.cnfU"
+>   bgcB_OF_exh(instanceDef, isPlot_OF=F)
+
+.. initialized instance as incidence 'matrixI' under global array glob
+.. reading all binary coordinates from file
+ ../../_data/coordBinary/bina_07.txt 
+Read 128 items
+
+.. initializing runtime with 'tic' before invoking bgcB_OF_exh 
+.. computatation completed: 0.063 sec elapsed
+   index   coord value
+1:     0 0000000    13
+2:     1 0000001    10
+3:     2 0000010    12
+4:     3 0000011    10
+5:     4 0000100    12
+6:     5 0000101    10
+ --- 
+   index   coord value
+1:   122 1111010     5
+2:   123 1111011     6
+3:   124 1111100     5
+4:   125 1111101     6
+5:   126 1111110     6
+6:   127 1111111     7
+
+ thisFunction   = bgcB_OF_exh 
+ userId         = brglez 
+ cpuName        = francs-imac-pro.lan 
+ sysName        = Darwin 
+ dateStamp      = Wed Feb 10 19:52:26 2021 
+ instanceDef    = ../../_data/bigraph/misc/wiki_7_6_3_10.cnfU 
+   nOps         = 128 
+   runtime      = 0.063 
+   nOpsPerSec   = 2031.7 
+   valueBest    = 3 
+
+ solutionsBestCnt = 10 
+[1] "0001011,3" "0001101,3" "0011001,3" "0101010,3" "0101100,3" "0111000,3"
+ --- 
+[1] "0101100,3" "0111000,3" "1000011,3" "1000101,3" "1010001,3" "1100100,3"
+
+ solutionsForestCnt = 1 
+[1] "1100100,3"
+ --- 
+[1] "1100100,3"
+[1] ".. returning from function bgcB_OF_exh"
+> 
+
+
+> path = paste(globPath[['rBed']], "proj_bgc/workDir", sep="") ; setwd(path)  
+>   source("../../_libTop_R/_libTop_R_resources.R") ; source("../_lib_R/bgc.R")
+>   instanceDef = "../../_data/bigraph/misc/steiner3_009_12_5_54.cnfU"
+>   bgcB_OF_exh(instanceDef, isPlot_OF=F)
+
+.. initialized instance as incidence 'matrixI' under global array glob
+.. reading all binary coordinates from file
+ ../../_data/coordBinary/bina_09.txt 
+Read 512 items
+
+.. initializing runtime with 'tic' before invoking bgcB_OF_exh 
+.. computatation completed: 0.17 sec elapsed
+   index     coord value
+1:     0 000000000    21
+2:     1 000000001    18
+3:     2 000000010    18
+4:     3 000000011    16
+5:     4 000000100    18
+6:     5 000000101    16
+ --- 
+   index     coord value
+1:   506 111111010     7
+2:   507 111111011     8
+3:   508 111111100     7
+4:   509 111111101     8
+5:   510 111111110     8
+6:   511 111111111     9
+
+ thisFunction   = bgcB_OF_exh 
+ userId         = brglez 
+ cpuName        = francs-imac-pro.lan 
+ sysName        = Darwin 
+ dateStamp      = Wed Feb 10 19:53:29 2021 
+ instanceDef    = ../../_data/bigraph/misc/steiner3_009_12_5_54.cnfU 
+   nOps         = 512 
+   runtime      = 0.17 
+   nOpsPerSec   = 3011.8 
+   valueBest    = 5 
+
+ solutionsBestCnt = 54 
+[1] "000111011,5" "000111101,5" "000111110,5" "001001111,5" "001011101,5"
+[6] "001011110,5"
+ --- 
+[1] "111001001,5" "111010010,5" "111011000,5" "111100100,5" "111101000,5"
+[6] "111110000,5"
+
+ solutionsForestCnt = 0 
+NULL
+ --- 
+NULL
+[1] ".. returning from function bgcB_OF_exh"
+> 
+
+
+
+> path = paste(globPath[['rBed']], "proj_bgc/workDir", sep="") ; setwd(path)  
+>   source("../../_libTop_R/_libTop_R_resources.R") ; source("../_lib_R/bgc.R")
+>   instanceDef = "../../_data/bigraph/misc/steiner3_015_35_9_31.cnfU"
+>   bgcB_OF_exh(instanceDef, isPlot_OF=F)
+
+.. initialized instance as incidence 'matrixI' under global array glob
+.. reading all binary coordinates from file
+ ./bina_15.txt 
+Read 32768 items
+
+.. initializing runtime with 'tic' before invoking bgcB_OF_exh 
+.. computatation completed: 19.557 sec elapsed
+   index           coord value
+1:     0 000000000000000    50
+2:     1 000000000000001    44
+3:     2 000000000000010    44
+4:     3 000000000000011    39
+5:     4 000000000000100    44
+6:     5 000000000000101    39
+ --- 
+   index           coord value
+1: 32762 111111111111010    13
+2: 32763 111111111111011    14
+3: 32764 111111111111100    13
+4: 32765 111111111111101    14
+5: 32766 111111111111110    14
+6: 32767 111111111111111    15
+
+ thisFunction   = bgcB_OF_exh 
+ userId         = brglez 
+ cpuName        = francs-imac-pro.lan 
+ sysName        = Darwin 
+ dateStamp      = Wed Feb 10 19:54:58 2021 
+ instanceDef    = ../../_data/bigraph/misc/steiner3_015_35_9_31.cnfU 
+   nOps         = 32768 
+   runtime      = 19.557 
+   nOpsPerSec   = 1675.5 
+   valueBest    = 9 
+
+ solutionsBestCnt = 315 
+[1] "000001111101111,9" "000001111110111,9" "000001111111011,9" "000001111111101,9"
+[5] "000001111111110,9" "000011111101101,9"
+ --- 
+[1] "111111100110000,9" "111111101000010,9" "111111101100000,9" "111111110001000,9"
+[5] "111111110100000,9" "111111111000000,9"
+
+ solutionsForestCnt = 0 
+NULL
+ --- 
+NULL
+[1] ".. returning from function bgcB_OF_exh"
+> 
+
+
+

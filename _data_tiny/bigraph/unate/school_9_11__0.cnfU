@@ -1,0 +1,39 @@
+c instanceDef_iso = school_9_11__0.cnfU ... same as school_9_11__C.cnfU  
+c    
+c OFb_unateF_exh(instanceDef, printDataTable=F)
+c ================================ 
+c   school_9_11__0.cnfU 
+c ================================
+c solutions_best_size = 2 
+c [1] "000001111,4" "000101101,4" 
+c
+c
+c >   unate_greedy_chvatal_iso(replicaId=0)
+c    replicaId  greedyId nOps runtime nOpsRate valueTarget valueGreedy diff coordGreedy
+c 1:         0 chvatal_F    6   0.023    260.9           4           6    2   110101101
+c
+c                  instance     = school_9_11__0.cnfU 
+c             replicateSize     = 1000 
+c             isSeedConsecutive = TRUE 
+c                      date     = Mon Aug 30 13:30:14 2021 
+c .. COMPLETING unate_greedy_chvatal_stoc_experiment_distr 
+c [1] 1.00 1.25 1.50
+c    ratio ratio_cnt
+c 1:  1.00       333
+c 2:  1.25       504
+c 3:  1.50       164
+c
+c   1   2   3   4   5   6   7   8   9
+c  "A" "B" "C" "D" "E" "F" "G" "H" "I"
+p cnfU 9 11
+6 0
+7 0
+1 6 0
+2 7 0
+1 3 6 0
+2 7 8 0
+1 3 9 0
+2 4 8 0
+3 9 0
+4 8 0
+5 9 0

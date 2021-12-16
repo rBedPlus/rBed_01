@@ -1,0 +1,27 @@
+c instanceDef_iso = school_9_11__B.cnfU 
+c
+c col_permV = c(1,2,7,8,3,4,5,6,9) 
+c
+c >   unate_greedy_chvatal_iso(replicaId=0)
+c    replicaId  greedyId nOps runtime nOpsRate valueTarget valueGreedy diff coordGreedy
+c 1:         0 chvatal_F    4   0.033    121.2           4           4    0   111100000 
+c 
+c OFb_unateF_exh(instanceDef, printDataTable=F)
+c ================================ 
+c   school_9_11__B.cnfU 
+c ================================
+c solutions_best_size = 2 
+c [1] "111100000,4" "111000010,4" 
+c
+p cnfU 9 11
+1 0
+2 0
+1 5 0
+2 6 0
+1 5 7 0
+2 6 8 0
+3 5 7 0
+4 6 8 0
+3 7 0
+4 8 0
+3 9 0

@@ -1,0 +1,15 @@
+# file               = /Users/liyixin/Desktop/rBed_01/rBed_bgmc/bgmc_movieLib/workDir/hashMap_10_20.txt
+# userId             = liyixin
+# cpuName            = x86_64
+# sysName            = Easons-MacBook-Air.local
+# data_type          = HashMMap
+# date               = 2021/12/14 23:30:13
+# homeDir            = /Users/liyixin
+# userDir            = /Users/liyixin/Desktop/rBed_01/rBed_bgmc/bgmc_movieLib
+Size(2^x),Java_read_HashMMap,Java_search_HashMMap
+10,0.49,0.051
+12,0.379,0.011
+14,1.454,0.051
+16,3.319,0.187
+18,15.757,0.79
+20,66.853,7.277

@@ -1,0 +1,12 @@
+# file               = ../workDir/chainHash_2_6.txt
+# userId             = liyixin
+# cpuName            = x86_64
+# sysName            = Easons-MacBook-Air.local
+# data_type          = ChainHash
+# date               = 2021/12/15 12:14:21
+# homeDir            = /Users/liyixin
+# userDir            = /Users/liyixin/Desktop/github_temp/rBed_bgmc/bgmc_movieLib/Java
+Size(2^x),Java_read_ChainHash,Java_search_ChainHash
+2,0.077,0.007
+4,0.026,0.003
+6,0.047,0.002

@@ -1,0 +1,30 @@
+# file = _BKV_bgcover.R ;# best-known-values of minimum cover for this directory
+# dateLast = Sun Jun 27 19:49:41 2021
+#
+
+instanceDef = steiner3_009_12.cnfU
+BKV = 5
+
+instanceDef = steiner3_015_35.cnfU
+BKV = 9
+
+instanceDef = steiner3_027_117.cnfU
+BKV = 18
+
+instanceDef = steiner3_045_330.cnfU
+BKV = 30
+
+instanceDef = steiner3_081_1080.cnfU
+BKV = 61
+
+instanceDef = steiner3_135_3015.cnfU
+BKV = 103
+
+instanceDef = steiner3_243_9801.cnfU
+BKV = 198
+
+instanceDef = steiner3_405_27270.cnfU
+BKV = 335
+
+instanceDef = steiner3_729_88452.cnfU
+BKV = 617

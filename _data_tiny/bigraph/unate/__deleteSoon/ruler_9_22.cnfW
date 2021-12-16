@@ -1,0 +1,54 @@
+c file = ruler_9_22.cnfW  
+c covtime_R2_n_m_graph(ruler="0,2,5,8,11,12,16,29,30,31", isPlot=F)
+c created with marks from 
+c a completer ruler= "0,2,5,8,11,12,16,29,30,31" 
+c URL = ?????
+c
+c solutionsBestCnt = 2 
+c [1] "000110111,8.5" "100010111,8.5"
+c [1] ".. returning from function OFb_bgcu_exh"
+c 
+c Read 512 items
+c nOps             "512"                                           
+c runtime          "0.11"                                          
+c nOpsPerSec       "4654.5" 
+c
+c  ** only TWO minimum cost cover solutions **
+c "0 0 0 1 1 0 1 1 1 :5" ; binary      coordinate
+c "      4,5,  7,8,9 :5" ; permutation coordinate
+c
+c "1 0 0 0 1 0 1 1 1 :5" ; binary      coordinate
+c "1,      5,  7,8,9 :5" ; permutation coordinate
+c
+c  7 6 6 7 7 6 6 6 5     ; column degrees
+c  1,2,3,4,5,6,7,8,9     ; column permutation
+c
+c  weights adjusted  manually 
+c     if min(colDegree) == 4, weight = max(colDegree) - min(colDegree) -  0.5
+c     else weight = min(colDegree)
+c  last comment line in this file
+p cnfW 9 22
+2.5 1.5 1.5 2.5 2.5 4 1.5 1.5 0.5
+        4 5          0 
+  1       5          0 
+            6 7      0 
+  1         6   8    0 
+            6     9  0 
+          5   7      0 
+        4 5   7 8    0 
+        4 5     8 9  0 
+        4         9  0 
+      3       7      0 
+      3         8    0 
+      3           9  0 
+    2         7      0 
+    2           8    0 
+    2             9  0 
+  1           7      0 
+  1             8    0 
+  1 2 3 4            0 
+      3   5 6        0 
+  1 2 3 4            0 
+    2     5          0 
+  1     4            0     
+  

@@ -1,0 +1,38 @@
+c file = ruler_10_21_6_15.cnfU  
+c covtime_R2_n_m_graph(ruler="0,3,5,9,15,20,21,28,29,30,31", isPlot=F)
+c 
+c > path = paste(globPath[['rBed']], "proj_bgc/workDir", sep="") ; setwd(path)  
+c >   source("../../_libTop_R/_libTop_R_resources.R") ; source("../_lib_R/bgc.R")
+c >   instanceDef = "../../_data/bigraph/misc/ruler_10_21_6_15.cnfU"
+c >   bgcB_OF_exh(instanceDef, isPlot_OF=F)
+c 
+c  solutionsBestCnt = 15 
+c  [1] "0111110010,6" "1010011110,6" "1010101101,6" "1010111100,6" "1011011100,6"
+c  [6] "1011101100,6" "1100011101,6" "1100101101,6" "1101011001,6" "1101101001,6"
+c [11] "1110011100,6" "1110101100,6" "1111011000,6" "1111101000,6" "1111110000,6"
+c 
+c  solutionsForestCnt = 0 
+c NULL
+c
+p cnfU  10 21
+5 6  0 
+2 4 5 9  0 
+3 5 10  0 
+1 3 4 6  0 
+4 7  0 
+4 8  0 
+2 4 6 10  0 
+1 5  0 
+1 6  0 
+3 7  0 
+1 2  0 
+3 10  0 
+2 7  0 
+2 8  0 
+1 2 7 9  0 
+1 2 8 10  0 
+1 9  0 
+2 3  0 
+1 3 4 6  0 
+6 7  0 
+5 7  0 

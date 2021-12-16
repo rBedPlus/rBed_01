@@ -1,0 +1,42 @@
+c file = wiki_6_7_3_6.cnfU (cnfU = unate cnf format) 
+c from https://en.wikipedia.org/wiki/Exact_cover
+c cnf  = formula  in a conjuctive normal form 
+c
+c > path = paste(globPath[['rBed']], "proj_bgc/workDir", sep="") ; setwd(path)  
+c >   source("../../_libTop_R/_libTop_R_resources.R") ; source("../_lib_R/bgc.R")
+c >   instanceDef = "../../_data/bigraph/misc/wiki_6_7_3_6.cnfU"
+c >   bgcB_OF_exh(instanceDef, isPlot_OF=F)
+c 
+c .. initialized instance as incidence 'matrixI' under global array glob
+c .. reading all binary coordinates from file
+c  ../../_data/coordBinary/bina_06.txt 
+c Read 64 items
+c     index  coord value
+c  1:     0 000000    13
+c  3:     2 000010    10
+c  4:     3 000011    11
+c  5:     4 000100    11
+c ...
+c ...
+c 60:    59 111011     5
+c 61:    60 111100    11
+c 62:    61 111101     5
+c 63:    62 111110     5
+c 64:    63 111111     6
+c     index  coord value
+c 
+c  solutionsBestCnt = 6 
+c [1] "010101,3" "010110,3" "011010,3" "100101,3" "100110,3" "101010,3"
+c 
+c  solutionsForestCnt = 1 
+c [1] "010101,3"
+c
+c 1 2 3 4 5 6 
+p cnfU  6 7
+  1 2         0
+          5 6 0
+        4 5   0
+  1 2 3       0
+      3 4     0
+        4 5   0
+  1   3   5 6 0

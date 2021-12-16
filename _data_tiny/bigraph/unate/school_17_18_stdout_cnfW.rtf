@@ -1,0 +1,80 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww13840\viewh9600\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 > rm(list=ls()) ; workDir = "~/DeskTop/github/rBed_tableau/workdir"  \
+>   setwd(workDir) ; source("../../_lib_R/_lib_R_resources.R") \
+>   clear(glob)\
+>   instanceDef = "../../_data_tiny/bigraph/unate/school_17_18.cnfU" \
+>   OFb_bgcu_exh(instanceDef)\
+.. initialized instance as datatable 'dataTb' under global array glob\
+.. initialized instance as incidence 'matrixI' under global array glob\
+.. reading all binary coordinates from file\
+ ./bina_17.txt \
+Read 131072 items\
+\
+.. data table of coordinate distribution from rank = 0 to rank = 17 \
+    rank nCoords\
+ 1:    0       1\
+ 2:    1      17\
+ 3:   10   19448\
+ 4:   11   12376\
+ 5:   12    6188\
+ 6:   13    2380\
+ 7:   14     680\
+ 8:   15     136\
+ 9:   16      17\
+10:   17       1\
+11:    2     136\
+12:    3     680\
+13:    4    2380\
+14:    5    6188\
+15:    6   12376\
+16:    7   19448\
+17:    8   24310\
+18:    9   24310\
+\
+..  partial of full data table, maximum number of rows = 131072 \
+        index             coord value isCover\
+     1: 46085 01011010000000101     6    TRUE\
+     2: 46086 01011010000000110     6    TRUE\
+     3: 46089 01011010000001001     6    TRUE\
+     4: 46090 01011010000001010     6    TRUE\
+     5: 47109 01011100000000101     6    TRUE\
+    ---                                      \
+131068:  2131 00000100001010011    35   FALSE\
+131069:  2143 00000100001011111    35   FALSE\
+131070:  2163 00000100001110011    35   FALSE\
+131071:  2175 00000100001111111    35   FALSE\
+131072:  2303 00000100011111111    35   FALSE\
+                 [,1]                                              \
+thisFunction     "OFb_bgcu_exh"                                    \
+userId           "brglez"                                          \
+cpuName          "francs-imac-pro.lan"                             \
+sysName          "Darwin"                                          \
+dateStamp        "Mon Jun  7 06:57:37 2021"                        \
+                 ""                                                \
+instanceDef      "../../_data_tiny/bigraph/unate/school_17_18.cnfU"\
+colWeights       "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"               \
+nCols            "17"                                              \
+mRows            "18"                                              \
+nOps             "131072"                                          \
+runtime          "3.986"                                           \
+nOpsPerSec       "32883.1"                                         \
+coordBest        "01011010000000101"                               \
+valueBest        "6"                                               \
+solutionBest     "01011010000000101,6"                             \
+solutionsBestCnt "8"                                               \
+\
+================================ \
+  school_17_18.cnfU \
+================================\
+solutionsBestCnt = 8 \
+[1] "01011010000000101,6" "01011010000000110,6" "01011010000001001,6"\
+[4] "01011010000001010,6" "01011100000000101,6" "01011100000000110,6"\
+[7] "01011100000001001,6" "01011100000001010,6"\
+[1] ".. returning from function OFb_bgcu_exh"\
+> }

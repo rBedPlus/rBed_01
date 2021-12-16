@@ -1,0 +1,25 @@
+c file = ruler_5_6_5.cnfU  
+c 
+c solutionsBestCnt = 5 
+c [1] "7,00111,3"  "14,01110,3" "21,10101,3" "26,11010,3" "28,11100,3"
+c [1] ".. returning from function bgc_OF_exh"
+> 
+c     names_marks  2 6 9 10 11
+c           marks  1 2 3  4  5
+c  1:neighb1           x  x
+c  2:neighb3         x x           
+c  3:neighb4       x x    x  
+c  4:neighb5         x       x
+c  5:neighb7       x   x   
+c  6:neighb8       x      x
+c           marks  1 2 3  4  5
+c     names_marks  2 6 9 10 11
+c
+c 1 2 3  4  5
+p cnfU  5 6
+      3  4      0         
+    2 3         0         
+  1 2    4      0         
+    2       5   0         
+  1   3         0         
+  1      4      0           

@@ -1,0 +1,19 @@
+c file = goodrich_7_9_4_2.cnfU (cnfU = unate cnf format) 
+c from Algorithm Design, Goodrich & Tanassia, Wiley 2002, Figure 8.11, page 397
+c cnf  = formula  in a conjuctive normal form 
+c see https://fairmut3x.wordpress.com/2011/07/29/cnf-conjunctive-normal-form-dimacs-format-explained/
+ solutionsBestCnt = 2 
+[1] "58,0111010,4" "90,1011010,4"
+c   max_matching_size = 7 
+c  
+c 1 2 3 4 5 6 7 
+p cnfU  7 9
+  1 2            0
+  1 2 3          0
+      2 3        0
+        3        0
+      3 4        0
+        4        0
+          5 6    0
+            6 7  0
+      3   5   7  0

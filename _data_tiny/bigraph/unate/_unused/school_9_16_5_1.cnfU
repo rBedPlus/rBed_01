@@ -1,0 +1,47 @@
+c file = school_9_16_5_1.cnfU (cnfU = unate cnf format) 
+c
+c================================ 
+c  school_9_16_5_1.cnfU 
+c================================
+csolutionsBestCnt = 1 
+c[1] "011100110,5"
+c
+c solutionsForestCnt = 0 
+c
+c                    teachers
+c                 1 2 3 4 5 6 7 8 9
+c  1:english      x x
+c  2:geography    x   x x
+c  3:history      x     x     x  
+c  4:math                 x
+c  5:chemistry              x x
+c  6:physics            x x
+c  7:music          x         x
+c  8:physEd                   x
+c  9:physEd                   x
+c 10:physEd                   x
+c 11:physEd                   x
+c 12:physEd                   x
+c 13:physEd                   x
+c 14:physEd                   x
+c 15:physEd                   x
+c 14:physEd                   x
+c  
+c 1 2 3 4 5 6 7 8 9
+p cnfU  9 16
+  1   3   5          0
+  1   3 4            0
+      3   5          0
+    2     5          0
+  1 2                0
+        4 5          0
+  1   3     6        0
+        4   6        0
+            6 7      0
+  1 2         7      0
+        4     7      0 
+          5   7      0
+    2           8    0
+  1             8    0 
+                8 9  0
+      3           9  0

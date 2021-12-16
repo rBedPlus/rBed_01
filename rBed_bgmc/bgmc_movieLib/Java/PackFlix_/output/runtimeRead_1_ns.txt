@@ -1,0 +1,12 @@
+# file = output/runtimeRead_1_ns.txt
+# userId      = yli223
+# sysName     = PackFlix
+# seedInit    = 1
+# way to measure runtime = n
+Size(2^x),ChainHash,HashMMap,LinkedHashMMap,LinearProbing,RedBlack,Tree
+10,108,159,114,120,157,103
+12,306,304,348,313,345,290
+14,732,829,725,764,695,803
+16,3290,3001,3413,2887,2877,2979
+18,12833,13087,12866,12895,13071,13027
+20,48981,48638,49792,50153,51131,49798

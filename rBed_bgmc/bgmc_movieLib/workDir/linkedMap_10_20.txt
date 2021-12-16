@@ -1,0 +1,15 @@
+# file               = /Users/liyixin/Desktop/rBed_01/rBed_bgmc/bgmc_movieLib/workDir/linkedMap_10_20.txt
+# userId             = liyixin
+# cpuName            = x86_64
+# sysName            = Easons-MacBook-Air.local
+# data_type          = LinkedHashMMap
+# date               = 2021/12/14 23:33:50
+# homeDir            = /Users/liyixin
+# userDir            = /Users/liyixin/Desktop/rBed_01/rBed_bgmc/bgmc_movieLib
+Size(2^x),Java_read_LinkedHashMMap,Java_search_LinkedHashMMap
+10,0.471,0.056
+12,0.398,0.016
+14,1.344,0.05
+16,2.647,0.166
+18,13.24,0.768
+20,56.078,4.415

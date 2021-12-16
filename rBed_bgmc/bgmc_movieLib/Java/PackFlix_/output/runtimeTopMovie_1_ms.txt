@@ -1,0 +1,12 @@
+# file = output/runtimeTopMovie_1_ms.txt
+# userId      = yli223
+# sysName     = PackFlix
+# seedInit    = 1
+# way to measure runtime = m
+Size(2^x),ChainHash,HashMMap,LinkedHashMMap,LinearProbing,RedBlack,Tree
+10,139,136,132,131,158,124
+12,341,322,287,239,287,242
+14,733,811,777,839,867,788
+16,3145,3251,3280,3273,3253,3325
+18,14525,14164,14618,14923,15766,16074
+20,61421,61138,62204,60199,60481,60822

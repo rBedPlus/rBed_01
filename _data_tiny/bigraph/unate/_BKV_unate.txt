@@ -1,0 +1,268 @@
+# file = _BKV_unate.R 
+# best-known-values of minimum UNATE cover instances in this directory
+# dateLast = Tue Jun  8 23:40:10 2021
+#
+
+instanceDef = school_19_20_1.cnfW 
+BKV = 1
+
+instanceDef = school_19_20_2.cnfW 
+BKV = 1
+
+instanceDef = stack_5_4__0.cnfU
+BKV = 2
+#solutionBestCnt = 1 ; "01010,2"
+#   ratio ratio_cnt
+#1:   1.0        73
+#2:   1.5        28
+
+instanceDef = stack_5_5__0.cnfU
+BKV = 2
+#solutionBestCnt = 1 ; "10100,2"
+#   ratio ratio_cnt
+#1:   1.0        45
+#2:   1.5        55
+
+instanceDef =  stack_5_5__1.cnfU
+BKV = 2
+#solutionBestCnt = 1 ; "10100,2"
+
+instanceDef = stack_5_6.cnfU
+BKV = 3
+#solutionBestCnt = 2 ;  "01011,3" "11100,3"
+#   ratio ratio_cnt
+#1:     1       101
+
+instanceDef = stack_5_6old.cnfU
+BKV = 2
+#solutionBestCnt = 2 ;  "01010,2" "10001,2"
+#   ratio ratio_cnt
+#1:   1.5       101
+
+instanceDef = stack_5_9__0.cnfU
+BKV = 4
+#solutionBestCnt = 1 ; "11011,4"
+#   ratio ratio_cnt
+#1:  1.00        64
+#2:  1.25        37
+
+
+instanceDef = school_9_11_ref.cnfU
+BKV = 4
+#solutionBestCnt = 2 ;  "110000110,4" "110001100,4
+#   ratio ratio_cnt
+#1:  1.00        34
+#2:  1.25        57
+#3:  1.50         9
+
+instanceDef = school_9_11_ref.cnfU
+BKV = 4
+#solutionBestCnt = 2 ; "000101110,4" "100100110,4"
+#   ratio ratio_cnt
+#1:  1.00        34
+#2:  1.25        57
+#3:  1.50         9
+
+instanceDef = school_9_11__0.cnfU
+BKV = 4
+#solutionBestCnt = 2 ; "000001111,4" "000101101,4"
+#  ratio ratio_cnt
+#1:  1.00        27
+#2:  1.25        52
+#3:  1.50        21
+
+instanceDef = school_9_11__1.cnfU
+BKV = 4
+#solutionBestCnt = 2 ; "001100011,4" "011000011,4"
+#   ratio ratio_cnt
+#1:  1.00        34
+#2:  1.25        57
+#3:  1.50         9
+
+instanceDef = school_9_11__2.cnfU
+BKV = 4
+#solutionBestCnt = 2 ; "000111001,4" "001101001,4"
+#   ratio ratio_cnt
+#1:  1.00        22
+#2:  1.25        60
+#3:  1.50        18
+
+instanceDef = school_9_11__A.cnfU
+BKV = 4
+#solutionBestCnt = 2 ; "110100010,4" "111100000,4"
+#   ratio ratio_cnt
+#1:  1.00        35
+#2:  1.25        47
+#3:  1.50        18
+
+instanceDef = school_9_11__B.cnfU
+BKV = 4
+#solutionBestCnt = 2 ; "111100000,4" "111000010,4"
+#[1] 1.00 1.25 1.50
+#   ratio ratio_cnt
+#1:  1.00        45
+#2:  1.25        38
+#3:  1.50        17
+
+instanceDef = school_9_11__C.cnfU
+BKV = 4
+#solutionBestCnt = 2 ; "000001111,4" "000101101,4"
+#   ratio ratio_cnt
+#1:  1.00        27
+#2:  1.25        52
+#3:  1.50        21
+
+instanceDef = school_9_11__D.cnfU
+BKV = 4
+#solutionBestCnt = 2 ; "000001111,4" "000101110,4"
+#   ratio ratio_cnt
+#1:  1.00        28
+#2:  1.25        51
+#3:  1.50        21
+
+instanceDef = school_9_11__G_L.cnfU
+BKV = 4
+#solutionBestCnt = 2 ;  "001001011,4" "101001010,4"
+#   ratio ratio_cnt
+#1:  1.00        25
+#2:  1.25        55
+#3:  1.50        20
+
+instanceDef = school_9_11__G_R.cnfU
+BKV = 4
+#solutionBestCnt = 2 ; "100111000,4" "100110010,4"
+#   ratio ratio_cnt
+#1:  1.00        38
+#2:  1.25        47
+#3:  1.50        15
+
+instanceDef = school_9_11__G_U.cnfU
+BKV = 4
+#solutionBestCnt = 2 ; "011001010,4" "011100010,4"
+#  ratio ratio_cnt
+#1:  1.00        34
+#2:  1.25        56
+#3:  1.50        10
+
+instanceDef = school_9_11__G.cnfU
+BKV = 4
+#solutionBestCnt = 2
+#1:  1.00        29
+#2:  1.25        48
+#3:  1.50        23
+
+instanceDef = school_9_11a.cnfW
+BKV = 14.25      
+#solutionBestCnt = 1  ; [1] "110001100,14.25"
+#   ratio ratio_cnt
+#1:     1       100
+
+instanceDef = school_9_11b.cnfW
+BKV = 4.25      
+#solutionBestCnt = 1  ; "110000110,4.25" "110001100,4.25"
+#   ratio ratio_cnt
+#1:     1       100
+
+instanceDef = school_8_10.cnfU
+BKV = 4
+#solutionBestCnt = 4
+
+instanceDef = chvatal_6_5.cnfW
+BKV = 1.1
+#solutionBestCnt = 1
+
+instanceDef = affil_9_12.cnfU
+BKV = 5
+#solutionBestCnt = 3
+
+instanceDef = cormen_a_6_12.cnfU
+BKV = 3
+#solutionBestCnt = 1
+
+instanceDef = cormen_b_12_6.cnfU
+BKV = 3
+#solutionBestCnt = 15
+
+instanceDef = stack_5_6.cnfU
+BKV = 2
+#solutionBestCnt = 2
+
+instanceDef = stack_5_6.cnfW
+BKV = 2
+#solutionBestCnt = 1
+
+instanceDef = ruler_9_22.cnfU
+BKV = 5
+#solutionBestCnt = 2
+
+instanceDef = ruler_9_22.cnfW
+BKV = 8.5
+#solutionBestCnt = 2
+
+instanceDef = school_5_6.cnfU 
+BKV = 3
+#solutionBestCnt = 1
+
+instanceDef = school_5_6.cnfW 
+BKV = 5
+#solutionBestCnt = 1
+
+instanceDef = school_6_7.cnfU
+BKV = 3
+#solutionBestCnt = 1
+
+instanceDef = school_7_8.cnfU
+BKV = 3
+#solutionBestCnt = 1
+
+instanceDef = school_9_16.cnfU
+BKV = 5
+#solutionBestCnt = 1
+
+instanceDef = school_9_16.cnfW
+BKV = 10
+#solutionBestCnt = 1
+
+instanceDef = school_11_12.cnfU
+BKV = 3
+#solutionBestCnt = 1
+
+instanceDef = school_11_12.cnfW
+BKV = 6
+#solutionBestCnt = 1
+
+instanceDef = school_13_14.cnfU
+BKV = 4
+#solutionBestCnt = 2
+
+instanceDef = school_13_14.cnfW
+BKV = 8
+#solutionBestCnt = 1
+
+instanceDef = school_15_16.cnfU
+BKV = 5
+#solutionBestCnt = 4
+
+instanceDef = school_15_16.cnfW
+BKV = 9.5
+#solutionBestCnt = 2
+
+instanceDef = school_17_18.cnfU
+BKV = 6
+#solutionBestCnt = 8
+
+instanceDef = school_17_18.cnfW
+BKV = 10.5
+#solutionBestCnt = 4
+
+instanceDef = school_19_20.cnfU
+BKV = 6
+#solutionBestCnt >= 1
+
+instanceDef = school_19_20.cnfW
+BKV = 11.5
+#solutionBestCnt >= 1
+
+instanceDef = school_19_20_a.cnfW
+BKV = 3.833
+#solutionBestCnt >= 1

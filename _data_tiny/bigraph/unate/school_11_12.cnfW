@@ -1,0 +1,20 @@
+c file = school_11_12__0.cnfW  
+c  
+c solutions_best_size = 1 
+c [1] "110001100,14.25"
+c [1] ".. returning from function OFb_bgcu_exh"
+c
+p cnfW  11 12
+0.5 0.75 3 4 5 6 7 8 9 
+1 2           0
+1   3 4       0
+1     4     7 0
+        5     0
+          6 7 0
+      4 5     0
+  2         7 0
+        5     8 0
+1 2             9 0
+1   3 4         9 0
+1     4           10 0
+1     4              11 0

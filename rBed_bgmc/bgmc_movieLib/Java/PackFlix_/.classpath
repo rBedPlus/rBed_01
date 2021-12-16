@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/PackFlix_ChainHash/lib/net-datastructures-6-0.jar"/>
+	<classpathentry kind="lib" path="/PackFlix_guava_HashMultiMap/lib/guava-r07.jar"/>
+	<classpathentry kind="lib" path="/Users/liyixin/Desktop/rBed_01/rBed_bgmc/bgmc_movieLib/javaADT/bgmc_chainhash.jar"/>
+	<classpathentry kind="lib" path="/Users/liyixin/Desktop/rBed_01/rBed_bgmc/bgmc_movieLib/javaADT/bgmc_hashmap.jar"/>
+	<classpathentry kind="lib" path="/Users/liyixin/Desktop/rBed_01/rBed_bgmc/bgmc_movieLib/javaADT/bgmc_linkedmap.jar"/>
+	<classpathentry kind="lib" path="/Users/liyixin/Desktop/rBed_01/rBed_bgmc/bgmc_movieLib/javaADT/bgmc_probinghash.jar"/>
+	<classpathentry kind="lib" path="/Users/liyixin/Desktop/rBed_01/rBed_bgmc/bgmc_movieLib/javaADT/bgmc_redblack.jar"/>
+	<classpathentry kind="lib" path="/Users/liyixin/Desktop/rBed_01/rBed_bgmc/bgmc_movieLib/javaADT/bgmc_tree.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

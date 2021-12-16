@@ -1,0 +1,12 @@
+# file = output/test_ch.txt
+# userId      = yli223
+# sysName     = PackFlix
+# seedInit    = 1
+# way to measure runtime = n
+Size(2^x),ChainHash,HashMMap,LinkedHashMMap,LinearProbing,RedBlack,Tree
+10,272
+12,438
+14,1189
+16,2736
+18,11424
+20,49194

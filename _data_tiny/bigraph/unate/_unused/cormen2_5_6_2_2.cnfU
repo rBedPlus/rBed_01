@@ -1,0 +1,18 @@
+c file = cormen2_5_6_2_2.cnfU (cnfU = unate cnf format) 
+c extended with column 5 cormen_4_5_2_2_0
+c cnf  = formula  in a conjuctive normal form 
+c see https://fairmut3x.wordpress.com/2011/07/29/cnf-conjunctive-normal-form-dimacs-format-explained/
+c
+c solutionsBestCnt = 2 
+c[1] "00101,2" "00110,2"
+c solutionsForestCnt = 0  
+c NULL
+c  
+c 1 2 3 4 5
+p cnfU  5 6
+  1     4 5  0
+  1   3      0
+    2 3 4 5  0
+      3      0
+      3 4    0
+   2    4 5  0

@@ -1,0 +1,15 @@
+# file               = /Users/liyixin/Desktop/rBed_01/rBed_bgmc/bgmc_movieLib/workDir/tree_10_20.txt
+# userId             = liyixin
+# cpuName            = x86_64
+# sysName            = Easons-MacBook-Air.local
+# data_type          = Tree
+# date               = 2021/12/14 23:39:41
+# homeDir            = /Users/liyixin
+# userDir            = /Users/liyixin/Desktop/rBed_01/rBed_bgmc/bgmc_movieLib
+Size(2^x),Java_read_Tree,Java_search_Tree
+10,0.468,0.028
+12,0.452,0.042
+14,1.44,0.064
+16,2.79,0.243
+18,12.52,1.508
+20,55.337,8.809
