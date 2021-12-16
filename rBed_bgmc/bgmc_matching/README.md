@@ -1,4 +1,4 @@
-# Description
+## Description
 bgmc_matching solves the maximum matching problem, also known as maximum-cardinality matching problem. bgmc_matching outputs a matching that contains the largest possible number of edges. Every maximum matching is maximal, but not every maximal matching is a maximum matching. Versions of maximum matching problems arise in a num- ber of contexts and applications: from flow and neural networks, scheduling and planning, modeling bonds in chemistry, graph coloring, the stable marriage problem, to matching kidney donors to kidney donor recipients, etc. In bgmc_matching, we have two versions of program written in Java and R. The experiment is simply testing the runtime performance between these two programming languages. Results can be found in section **Maximum Matching in Bipartite Graphs** from our paper. Note: the idea of implementing maximum matching in Java is from **GeeksforGeeks**.
 
 ## Structure
@@ -13,7 +13,7 @@ bgmc_matching solves the maximum matching problem, also known as maximum-cardina
 
 * **bgmc_matching.R** - contains R code for all functions for experiments
 
-# Instruction
+## Instruction
 Here are two examples for running the jar file and R program.
 
 ## bgmc_matching.jar
@@ -97,5 +97,5 @@ Once we install **__init_rBed_01.R** in our home directory, we can proceed the f
   
 ```
 
-# Limitation
+## Limitation
 For the current version of bgmc_matching in R, we need to download the entire rBed_01 and place it on our Desktop. Mac users can easily install, while other users may need to make some modifications to the code, specifically, correcting the path in **__init_rBed_01.R** from home directory and **__lib_R_resources.R** from _lib_R in rBed_01, so that the program will execute correctly.
