@@ -2,7 +2,7 @@
 
 > Minimum set covering problems arise in a number of domains. In logistics, the context includes market analysis, crew scheduling, emergency services, etc. Electronic design automation deals with logic minimization, technology mapping, and FSM optimization. In bioinformatics, combining Chromatin ImmunoPrecipitation (ChIP) with DNA sequencing to identify the binding sites of DNA-associated proteins leads to formulation of the motif selection problem, mapped to a variant of the set cover problem.
 
-The major point of our paper is to use greedy algorithm to solve the set cover problem, and use a stochastic heuritics and isomorph concepts to improve performance. bgmc_covering contains all necessary functions to support experiments in our paper.
+The major point of our paper is to use greedy algorithm to solve the set cover problem, and use a stochastic heuritics and isomorph concepts to improve performance. bgmc_covering.R contains all necessary functions to support experiments in our paper.
 
 ## Instruction
 Once we install **__init_rBed_01.R** in our home directory, we can proceed the following commands in R shell or RStudio. These functions support all figures and tables in our experiments shown in section **Maximum Matching in Bipartite Graphs** in our paper.
