@@ -1,6 +1,6 @@
-# rBed_01
+# rBed_bgmc
 
-rBed_01 is currently under construction. More info will come later...
+rBed_bgmc is currently under construction. More info will come later...
 
 Article is in arxiv.org
 
