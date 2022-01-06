@@ -22,4 +22,4 @@ If you have any question, feel free to reach me at lieason715@gmail.com
 
 ## Updates
 
-The PDF version of our paper will be updated soon...
+arxiv link: https://arxiv.org/abs/2201.00234
