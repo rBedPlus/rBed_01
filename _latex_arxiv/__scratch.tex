@@ -1,0 +1,19 @@
+
+\documentclass[final,5p,twocolumn]{elsarticle}
+
+\pdfoutput=1 %% recommended by arXiv (http://arxiv.org/help/submit_tex#pdflatex)
+\input{../../_latex/_preambles/preamble_elsarticle.tex}
+\input{../../_latex/_preambles/preamble_thisarticle.tex}
+
+
+\begin{document}
+\input{_Tables/tb_bgmc_data_.tex}
+
+Describe Table~\ref{tb_bgmc_data} 
+
+\bibliography{
+  \detokenize{../../_latex/_bibtex/OPUS_rBed},
+  \detokenize{../../_latex/_bibtex/OPUS2}
+}
+
+\end{document}

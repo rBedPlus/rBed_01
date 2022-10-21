@@ -1,0 +1,49 @@
+%%%%%__scratch_UB.tex
+
+\documentclass[final,5p,twocolumn]{elsarticle}
+
+\input{../../_latex/_preambles/preamble_elsarticle.tex}
+\input{../../_latex/_preambles/preamble_thisarticle.tex}
+
+\begin{document}
+
+%see "How to create colors" under
+%https://steeven9.github.io/USI-LaTeX/html/packages_hyperref_babel_xcolor3.html
+\definecolor{Cyan}{cmyk}{0.08,0,0,0}
+
+\textcolor{Cyan}{Iteger non enim. Praesent euismod nunc eu purus. Donec bibendum quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus eu enim. Vestibulum pellentesque felis eu massa. Nulla malesuada porttitor diam.}
+
+\mtext{Iteger non enim. Praesent euismod nunc eu purus. Donec bibendum quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus eu enim. Vestibulum pellentesque felis eu massa. Nulla malesuada porttitor diam.}
+
+\begin{footnotesize}
+\begin{tabular}{p{0.85\textwidth}}
+ ~ \\
+\hline
+ \multicolumn{1}{|p{0.85\textwidth}|}{
+ \footnotesize   \mtext{This manuscript, created on \thedate, is being drafted for posting on the server at \url{http://arxiv.org/} and as a journal submission for a peer review. Authors welcome comments and suggestions from readers at all times.} 
+ } \\
+ %Currently, the manuscript is also undergoing anonymous peer reviews.} \\
+% 
+% \footnotesize This version, created on \@date, is an electronic reprint of the original article published in the Applied Soft Computing Journal, 2017, Vol. 56, pp. 262--285,
+% \href{http://dx.doi.org/10.1016/j.asoc.2017.02.024}{doi:10.1016/j.asoc.2017.02.024}. This reprint differs from the original in pagination and typographic detail.} \\
+ \hline
+\end{tabular}
+\end{footnotesize}
+
+
+%\pagecolor{Cyan}
+%\hspace*{0.9em}
+%\begin{minipage}{0.38\textwidth}
+%\begin{Verbatim}[frame=lines, fontsize=\footnotesize,numbers=left,
+%numbersep=3pt,firstline=1,xleftmargin=9mm] 
+%chvatal_UB = function(column_degs, BKV)
+%{
+%  d           = max(column_degs)
+%  harmonicNum = sum(1/seq(d))
+%  UB          = harmonicNum * BKV
+%  return(UB)
+%}        
+%\end{Verbatim}
+%\end{minipage}
+
+\end{document}

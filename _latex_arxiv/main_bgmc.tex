@@ -1,0 +1,27 @@
+\documentclass[final,5p,twocolumn]{elsarticle}
+
+\pdfoutput=1 %% recommended by arXiv (http://arxiv.org/help/submit_tex#pdflatex)
+\input{../../rBed_00/_latex_bib/_preambles/preamble_elsarticle.tex}
+\input{../../rBed_00/_latex_bib/_preambles/preamble_thisarticle.tex}
+
+\begin{document}
+
+\input{section_bgmc_frontmatter.tex}
+% 
+\input{section_bgmc_introduction.tex}
+%
+\input{section_bgmc_316.tex}
+% 
+\input{section_bgmc_matching.tex}
+
+%\vspace*{38ex}
+\input{section_bgmc_cover.tex}
+%
+\input{section_bgmc_summary.tex}
+
+\bibliography{
+  \detokenize{../../_latex/_bibtex/OPUS_rBed},
+  \detokenize{../../_latex/_bibtex/OPUS2}
+}
+
+\end{document}

@@ -1,0 +1,194 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{OPUS-matching-1998-Fueredi-bigraphs}
+Z.~F{\"u}redi, {\it Matchings and Covers in Hypergraphs}, Graphs and
+  Combinatorics 4 (1988) 115--206.
+
+\bibitem{OPUS2-2022-coupon-arxiv-Brglez}
+F.~Brglez, E.~Li, {Empirical Models of Key/Coupon Problems: from Urns and Dice
+  to Layered Sparse Regular Graphs}, {Work in progress. A preprint available on
+  request.} (2022).
+
+\bibitem{OPUS2-2022-mclass-arxiv-Brglez}
+F.~Brglez, E.~Li, {Multiwalk Stochastic Solver Alternatives for Set Cover
+  Minimization: Principles and Components}, {Work in progress. A preprint
+  available on request.} (2022).
+
+\bibitem{OPUS-R-manual}
+{R Core Team}, \href{https://www.R-project.org/}{{R: A Language and Environment
+  for Statistical Computing}}, {R Foundation for Statistical Computing},
+  Vienna, Austria (2021).
+\newline\urlprefix\url{https://www.R-project.org/}
+
+\bibitem{OPUS-csc316-fall-2020}
+{CSC316:~Data~Structures~and~Algorithms~~~~~~~~~~~~~~~~~~},
+  {\url{https://www.engineeringonline.ncsu.edu/course/csc-316-data-structures-and-algorithms/}}
+  (2020).
+
+\bibitem{OPUS-csc316-dataset}
+{IMDb Datasets}, {\url{https://www.imdb.com/interfaces/}} (2021).
+
+\bibitem{OPUS-book_stats-1977-Wiley-Johnson-urn_models}
+N.~L. Johnson, S.~Kotz, Urn models and their applications: an approach to
+  modern discrete probability theory, Wiley, 1977.
+
+\bibitem{OPUS-csc316-guava}
+{Guava: Google Core Libraries for Java},
+  {\url{https://github.com/google/guava}} (2021).
+
+\bibitem{OPUS-csc316-net-datastructure}
+{Homepage of net.datastructures at the the Brown University},
+  {\url{http://cs.brown.edu/cgc/net.datastructures.net/}} (2014).
+
+\bibitem{OPUS-csc316-data-frame}
+{R Data Frames}, {\url{http://www.r-tutor.com/r-introduction/data-frame}}
+  (2021).
+
+\bibitem{OPUS-csc316-data-table}
+{R Data Tables},
+  {\url{htps://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html}}
+  (2021).
+
+\bibitem{OPUS-book_algs-1990-MCGraw_Hill-Cormen}
+T.~H. Cormen, C.~H. Leiserson, R.~L. Rivest, Introduction to Algorithms,
+  McGraw-Hill Book Company, 1990.
+
+\bibitem{OPUS-matching-1956-Math-Ford_Fulkerson-max_flows}
+L.~R. Ford, D.~R. Fulkerson, {Maximal Flow through a Network}, {Canad. J. Math}
+  8 (1956) {399--404}.
+
+\bibitem{OPUS-matching-1973-SIAM-Hopcroft_Karp}
+{J, E. Hopcroft and R. M. Karp}, {An $n^{5/2} $ Algorithm for Maximum Matchings
+  in Bipartite Graphs}, SIAM Journal on Computing 2~(4) (1973) {225--231}.
+
+\bibitem{OPUS-matching-2021-geeksforgeeks-java}
+{Maximum Bipartite Matching: Java Code },
+  {\url{https://www.geeksforgeeks.org/maximum-bipartite-matching/}} (2021).
+
+\bibitem{OPUS-matching-2021-igraph-R}
+{G. Cs{\'a}rdi and T. Nepusz}, {Maximum Bipartite Matching: R Code},
+  {\url{https://igraph.org/r/doc/matching.html}} (2021).
+
+\bibitem{OPUS-setc-2021-Resende-steiner3_data}
+M.~G.~C. Resende, \href{http://mauricio.resende.info/data/index.html}{{Steiner
+  Triple Covering Problems }} (2021).
+\newline\urlprefix\url{http://mauricio.resende.info/data/index.html}
+
+\bibitem{OPUS-setc-2014-orlib-Beasley}
+J.~E. Beasley, {OR-Library},
+  {\url{http://people.brunel.ac.uk/~mastjjb/jeb/orlib/scpinfo.html}} (2021).
+
+\bibitem{OPUS2-1993-benchm-Logic_synthesis}
+{Logic Synthesis Workshops 1989, 1991, 1993}, {The Benchmark Archives at CBL
+  (up to 1996},
+  {\url{https://people.engr.ncsu.edu/brglez/CBL/benchmarks/Benchmarks-upto-1996.html}}
+  (1993).
+
+\bibitem{OPUS-cnf-2021-wiki}
+Conjunctive normal form,
+  \url{https://en.wikipedia.org/wiki/Conjunctive\_normal\_form} (2021).
+
+\bibitem{OPUS2-2005-cover-DAC-Li}
+X.~Y. Li, M.~F. Stallmann, F.~Brglez, Effective bounding techniques for solving
+  unate and binate covering problems, in: DAC '05: Proceedings of the 42nd
+  annual conference on Design automation, ACM, New York, NY, USA, 2005, pp.
+  385--390, {\color{blue}{\url{http://doi.acm.org/10.1145/1065579.1065682}}}.
+
+\bibitem{OPUS-github-rBedPlus-bgmc}
+E.~Li, F.~Brglez, {Datasets, Programs and Asymptotic Experiments with Data
+  Structures: Bipartite Graph Matchings and Covers},
+  {\url{https://github.com/rBedPlus/rBed_bgmc}} (2021).
+
+\bibitem{OPUS-setc-1979-OR-Chvatal-greedy}
+V.~Chvatal, {A Greedy Heuristic for the Set-covering Problem}, Mathematics of
+  Operations Research 4~(3) (1979) 233--235.
+
+\bibitem{OPUS-setc-2016-Springer-Young-Greedy}
+N.~E. Young, {Greedy Set-Cover Algorithms (Part 7 of Encyclopedia of
+  Algorithms)}, Springer Encyclopedia of Algorithms (2016) 886--889.
+
+\bibitem{OPUS-isomorph-1976-CognitivePhychology-Simon_Hayes}
+H.~A. Simon, J.~R. Hayes, The understanding process: problem isomorphs,
+  {Cognitive Psychology} 8 (1976) 165--190, reprinted in MOT1, Chap. 7.2.
+
+\bibitem{OPUS-isomorph-2001-Erlbaum-Gunzelmann-ACT-R_model}
+G.~Gunzelmann, J.~R. Anderson, An {ACT-R} model of the evolution of strategy
+  use and problem difficulty, in: {Proceedings of the Fourth International
+  Conference on Cognitive Modeling}, 2001, pp. 109--114, mahwah, NJ: Lawrence
+  Erlbaum Associates.
+
+\bibitem{OPUS-isomorph-1996-MITPress-Simon-Models}
+H.~A. Simon, Models of my life, {MIT Press}, 1996.
+
+\bibitem{OPUS2-2001-BDD-STTT-Harlow}
+{J E. Harlow III and F. Brglez}, {Design of Experiments and Evaluation of {BDD}
+  Ordering Heuristics}, International Journal on Software Tools for Technology
+  Transfer (STTT) 3~(2) (2001) 193--206,
+  {\color{blue}{\url{http://www.springerlink.com/content/15en21tldhrw08nt/}}}.
+
+\bibitem{OPUS2-2001-crossnum-JEA-Stallmann}
+M.~Stallmann, F.~Brglez, D.~Ghosh, Heuristics, experimental subjects, and
+  treatment evaluation in bigraph crossing minimization, J. Exp. Algorithmics 6
+  (2001) 8, {\color{blue}{\url{http://doi.acm.org/10.1145/945394.945402}}}.
+\newblock \href {https://doi.org/http://doi.acm.org/10.1145/945394.945402}
+  {\path{doi:http://doi.acm.org/10.1145/945394.945402}}.
+
+\bibitem{OPUS2-2005-sat-AMAI-Brglez}
+F.~Brglez, X.~Y. Li, M.~F. Stallmann, On {SAT} instance classes and a method
+  for reliable performance experiments with {SAT} solvers., Ann. Math. Art.
+  Intell. 43~(1) (2005) 1--34.
+
+\bibitem{OPUS2-2007-isomorph-ExpCS-Brglez}
+\href{http://doi.acm.org/10.1145/1281700.1281713}{{Performance Testing of
+  Combinatorial Solvers With Isomorph Class Instances}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/1281700.1281713}
+
+\bibitem{OPUS-setc-2012-LBCS-Saket-UB}
+{R. Saket and M. Sviridenko},
+  \href{https://doi.org/10.1007/978-3-642-32512-0_25}{{New and Improved Bounds
+  for the Minimum Set Cover Problem}}, {Lecture Notes in Computer Science,
+  APPROX 2012, RANDOM 2012} (2012).
+\newline\urlprefix\url{https://doi.org/10.1007/978-3-642-32512-0_25}
+
+\bibitem{OPUS-setc-2016-OR-Felici-UB}
+G.~Felici, S.~Ndreca, A.~Procacci, B.~Scoppola, {A-priori upper bounds for the
+  set covering problem}, Annals of Operations Research 238 (2016) 229--241.
+
+\bibitem{OPUS-setc-2019-STOC-Abboud-UB}
+A.~Abboud, R.~Addanki, F.~Grandoni, D.~Panigrahi, B.~Saha,
+  \href{https://doi.org/10.1145/3313276.3316376}{Dynamic set cover: Improved
+  algorithms and lower bounds}, in: Proceedings of the 51st Annual ACM SIGACT
+  Symposium on Theory of Computing, STOC 2019, Association for Computing
+  Machinery, 2019, pp. 114--125.
+\newline\urlprefix\url{https://doi.org/10.1145/3313276.3316376}
+
+\bibitem{OPUS-setc-2014-BRKGA-Resende-code}
+R.~Toso, M.~Resende, \href{doi: 10.1080/10556788.2014.890197}{{A C++
+  application programming interface for biased random key genetic algorithms}},
+  Optimization Methods and Software (2014).
+\newline\urlprefix\url{doi: 10.1080/10556788.2014.890197}
+
+\bibitem{OPUS-setc-2014-BRKGA-Resende}
+J.~F. Gon{\c c}alves, M.~G. Resende, R.~F. Toso, {An Experimental Comparison of
+  Biased and Unbiased Random-Key Genetic Algorithms}, Pesq. Oper. 34~(2),
+  {\url{https://www.scielo.br/j/pope/a/wZhhVnhhPkGkKCHttwfTgwd/?lang=en}} (5-8
+  2014).
+
+\bibitem{OPUS-setc-2014-SWJ-Broderick-Bee_Colony}
+B.~Crawford, R.~Soto, R.~Cuesta, F.~Paredes, {Application of the Artificial Bee
+  Colony Algorithm for Solving the Set Covering Problem}, The Scientific World
+  Journal{Swarm Intelligence and Its Applications 2014,
+  \url{https://doi.org/10.1155/2014/189164}} (2014).
+
+\bibitem{OPUS-affiliation-2021-Springer-Stankova-bg_classification}
+M.~Stankova, S.~Praet, D.~Martens, F.~Provost,
+  \href{https://doi.org/10.1007/s10994-020-05898-0}{Node classification over
+  bipartite graphs through projection}, Machine Learning 110~(1) (2021) 37--87.
+\newline\urlprefix\url{https://doi.org/10.1007/s10994-020-05898-0}
+
+\end{thebibliography}

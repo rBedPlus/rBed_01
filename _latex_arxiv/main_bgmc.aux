@@ -1,0 +1,201 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\bibstyle{elsarticle-num}
+\emailauthor{lieasoni715@gmail.com}{Yixin~Li}
+\emailauthor{brglez@ncsu.edu}{Franc~Brglez}
+\citation{OPUS-matching-1998-Fueredi-bigraphs}
+\citation{OPUS2-2022-coupon-arxiv-Brglez,OPUS2-2022-mclass-arxiv-Brglez}
+\citation{OPUS-R-manual}
+\citation{OPUS2-2022-mclass-arxiv-Brglez}
+\citation{OPUS-csc316-fall-2020}
+\citation{OPUS-csc316-dataset}
+\@LN@col{1}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec_introduction}{{1}{1}{Introduction}{section.1}{}}
+\@LN@col{2}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Beyond CSC316 and Java}{1}{section.2}\protected@file@percent }
+\newlabel{sec_316}{{2}{1}{Beyond CSC316 and Java}{section.2}{}}
+\citation{OPUS-book_stats-1977-Wiley-Johnson-urn_models}
+\citation{OPUS-csc316-guava}
+\citation{OPUS-csc316-net-datastructure}
+\citation{OPUS-csc316-data-frame}
+\citation{OPUS-csc316-data-table}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Representations of data sets used in the performance experiments with the {\it  MovieLib} data set introduced in Section\nobreakspace  {}\ref  {sec_316}: {\sf  (a)}\nobreakspace  {}a tabular organization of files {\it  MovieRecord} and {\it  WatchRecord}, {\sf  (b)}\nobreakspace  {}a bigraph that illustrates relationships between the items from the two files in (a), and {\sf  (c)}\nobreakspace  {}a statistical model, based on $2^{10}\nobreakspace  {}...\nobreakspace  {}2^{20}$ trials of sampling with replacement from 11 urns, each with urn capacity of holding $2^{10}\nobreakspace  {}...\nobreakspace  {}2^{20}$ unique {\it  movieID} tags. The actual {\it  MovieLib} is represented with 6 urns: their sizes are $2^{10}$, $2^{12}$, $2^{14}$, $2^{16}$, $2^{18}$, and $2^{10}$. Notably, the fraction of unique {\it  movieID} tags observed by analyzing actual data from {\it  MovieLib} is also converging towards $1 - e^{-1} = 0.6321$ and is well within the expected range for this experiment. \relax }}{2}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fg_bgmc_movieLib_data}{{1}{2}{Representations of data sets used in the performance experiments with the {\it MovieLib} data set introduced in Section~\ref {sec_316}: {\sf (a)}~a tabular organization of files {\it MovieRecord} and {\it WatchRecord}, {\sf (b)}~a bigraph that illustrates relationships between the items from the two files in (a), and {\sf (c)}~a statistical model, based on $2^{10}~...~2^{20}$ trials of sampling with replacement from 11 urns, each with urn capacity of holding $2^{10}~...~2^{20}$ unique {\it movieID} tags. The actual {\it MovieLib} is represented with 6 urns: their sizes are $2^{10}$, $2^{12}$, $2^{14}$, $2^{16}$, $2^{18}$, and $2^{10}$. Notably, the fraction of unique {\it movieID} tags observed by analyzing actual data from {\it MovieLib} is also converging towards $1 - e^{-1} = 0.6321$ and is well within the expected range for this experiment. \relax }{figure.caption.1}{}}
+\@LN@col{1}
+\@LN@col{2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}{\sf  Data Structures and Java Libraries}}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}{\it  \sf  Runtime experiments: Java vs R}}{2}{subsection.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  Asymptotic runtime performance experiments with instances from {\it  movieLib}, based on Java and R code. In each case, the objective is to retrieve the top 10 movies after reading two sets of files: one listing movies and one listing viewer interactions with each movie. In (a), we report {\it  runtime\_total} for best four data structures in Java; a model used in CSC316 class. In (b), we report on {\it  runtime\_total} for the single best data structure in Java ({\t chainHash}) in comparison with two best data structures in R ({\t dataFrame} and {\t dataTable}). In (c), we report {\it  runtime\_read} for {\it  chainHash} in Java and {\it  dataFrame} and {\it  dataTable} in R. In (d), we report {\it  runtime\_search} for {\it  chainHash} in Java and {\it  dataFrame} and {\it  dataTable} in R. There is no doubt that, for instances from {\it  movieLib}, R significantly outperforms Java -- with {\it  dataTable} an asymptotically better data structure in comparison with {\it  dataFrame}. \relax }}{3}{figure.caption.2}\protected@file@percent }
+\newlabel{fg_bgmc_movieLib_runtime}{{2}{3}{Asymptotic runtime performance experiments with instances from {\it movieLib}, based on Java and R code. In each case, the objective is to retrieve the top 10 movies after reading two sets of files: one listing movies and one listing viewer interactions with each movie. In (a), we report {\it runtime\_total} for best four data structures in Java; a model used in CSC316 class. In (b), we report on {\it runtime\_total} for the single best data structure in Java ({\t chainHash}) in comparison with two best data structures in R ({\t dataFrame} and {\t dataTable}). In (c), we report {\it runtime\_read} for {\it chainHash} in Java and {\it dataFrame} and {\it dataTable} in R. In (d), we report {\it runtime\_search} for {\it chainHash} in Java and {\it dataFrame} and {\it dataTable} in R. There is no doubt that, for instances from {\it movieLib}, R significantly outperforms Java -- with {\it dataTable} an asymptotically better data structure in comparison with {\it dataFrame}. \relax }{figure.caption.2}{}}
+\@LN@col{1}
+\@LN@col{2}
+\citation{OPUS-book_algs-1990-MCGraw_Hill-Cormen}
+\citation{OPUS-matching-1956-Math-Ford_Fulkerson-max_flows}
+\citation{OPUS-matching-1973-SIAM-Hopcroft_Karp}
+\citation{OPUS-matching-2021-geeksforgeeks-java}
+\citation{OPUS-matching-2021-igraph-R}
+\citation{OPUS-setc-2021-Resende-steiner3_data}
+\citation{OPUS-setc-2014-orlib-Beasley}
+\citation{OPUS2-1993-benchm-Logic_synthesis}
+\citation{OPUS-cnf-2021-wiki}
+\citation{OPUS2-2005-cover-DAC-Li}
+\citation{OPUS-github-rBedPlus-bgmc}
+\citation{OPUS-cnf-2021-wiki}
+\citation{OPUS-cnf-2021-wiki}
+\citation{OPUS-setc-2021-Resende-steiner3_data}
+\citation{OPUS-setc-2014-orlib-Beasley}
+\citation{OPUS2-1993-benchm-Logic_synthesis}
+\citation{OPUS-matching-2021-geeksforgeeks-java}
+\citation{OPUS-matching-2021-igraph-R}
+\citation{OPUS-setc-2021-Resende-steiner3_data}
+\citation{OPUS-setc-2014-orlib-Beasley}
+\citation{OPUS2-1993-benchm-Logic_synthesis}
+\citation{OPUS-matching-2021-geeksforgeeks-java}
+\citation{OPUS-matching-2021-igraph-R}
+\citation{OPUS-cnf-2021-wiki}
+\@LN@col{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Correlation Experiments with {\tt  MovieLib} Dataset}{4}{subsection.2.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces  These two plots relate results for the largest movie list with $2^{20}$ titles. The plot (a) depicts the frequency of top 10 movies watched. For example, the movie with index 1 has been watched 9 times, movies with indices 2-9 have been watched 8 times, etc.   The plot (b) counts the total number of movies watched. For example, 385128 movies have been watched only once (index = 1), 75 movies have been watched 7 times (index = 7), only one movie has been watched 9 times (index = 9). \vspace  *{-3ex} \relax }}{4}{figure.caption.3}\protected@file@percent }
+\newlabel{fg_bgmc_movieLib_best10}{{3}{4}{These two plots relate results for the largest movie list with $2^{20}$ titles. The plot (a) depicts the frequency of top 10 movies watched. For example, the movie with index 1 has been watched 9 times, movies with indices 2-9 have been watched 8 times, etc. \\ The plot (b) counts the total number of movies watched. For example, 385128 movies have been watched only once (index = 1), 75 movies have been watched 7 times (index = 7), only one movie has been watched 9 times (index = 9). \vspace *{-3ex} \relax }{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Maximum Matching in Bipartite Graphs}{4}{section.3}\protected@file@percent }
+\newlabel{sec_matching}{{3}{4}{Maximum Matching in Bipartite Graphs}{section.3}{}}
+\@LN@col{2}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces  This table supports discussions in Section\nobreakspace  {}\ref  {sec_matching} {\it  as well as} in Section\nobreakspace  {}\ref  {sec_cover}. Columns denote the name of the instance file, number of instance columns ({\it  nCols}), number of instance rows ({\it  mRows}), matrix density column ({\it  mDens $:=$ numEdges$/$(nCols*mRows)}), maximum matrix degree column ({\it  mCD}), a column with relative values of maximum matchings for each instance, ({\it  mP $:=$ max\_matchingSize$/$nCols}), best-known-values of the minimum set cover ({\it  BKV}), Chvatal's upper bound on the minimum set cover ({\it  UB}), observed set cover statistics with the Chvatal's greedy algorithm ({\it  value\_Chvatal\_stats}), and set cover statistics normalized with {\it  BKV}, ({\it  BKV\_ratio\_stats}). Instance file name extensions, {\it  .cnfU} and {\it  .cnfW}, denote instances with unit weighted columns and pre-assigned weighted columns, respectively. The reported statistics represents values of {\it  minimum, median, mean, standard deviation, and maximum}. Except for instances that are prefixed with {\it  **}, the reported statistics are based on experiments with 1000 replications. Experiments with six instances prefixed with {\it  **} are based on 10,000 replications. \relax }}{5}{table.caption.4}\protected@file@percent }
+\newlabel{tb_bgmc_data}{{1}{5}{This table supports discussions in Section~\ref {sec_matching} {\it as well as} in Section~\ref {sec_cover}. Columns denote the name of the instance file, number of instance columns ({\it nCols}), number of instance rows ({\it mRows}), matrix density column ({\it mDens $:=$ numEdges$/$(nCols*mRows)}), maximum matrix degree column ({\it mCD}), a column with relative values of maximum matchings for each instance, ({\it mP $:=$ max\_matchingSize$/$nCols}), best-known-values of the minimum set cover ({\it BKV}), Chvatal's upper bound on the minimum set cover ({\it UB}), observed set cover statistics with the Chvatal's greedy algorithm ({\it value\_Chvatal\_stats}), and set cover statistics normalized with {\it BKV}, ({\it BKV\_ratio\_stats}). Instance file name extensions, {\it .cnfU} and {\it .cnfW}, denote instances with unit weighted columns and pre-assigned weighted columns, respectively. The reported statistics represents values of {\it minimum, median, mean, standard deviation, and maximum}. Except for instances that are prefixed with {\it **}, the reported statistics are based on experiments with 1000 replications. Experiments with six instances prefixed with {\it **} are based on 10,000 replications. \relax }{table.caption.4}{}}
+\@LN@col{1}
+\@LN@col{2}
+\citation{OPUS-matching-2021-geeksforgeeks-java}
+\citation{OPUS-matching-2021-igraph-R}
+\citation{OPUS-matching-1956-Math-Ford_Fulkerson-max_flows}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  Three views of the instance {\tt  school\_9\_11\_\_0.cnfU} introduced in Table\nobreakspace  {}\ref  {tb_bgmc_data}: {\sf  (a)}\nobreakspace  {} an 11-row, 9-column sparse matrix in a {\it  cnf format}\nobreakspace  {}\cite  {OPUS-cnf-2021-wiki}, {\sf  (b)}\nobreakspace  {} the maximum bipartite matching problem: with 9 red edges representing the optimum solution, {\sf  (c)}\nobreakspace  {} the minimum set covering problem: 4 vertices at the top cover all 11 vertices at the bottom as illustrated with 11 edges. \relax }}{6}{figure.caption.5}\protected@file@percent }
+\newlabel{fg_bgmc_matching_cover}{{4}{6}{Three views of the instance {\tt school\_9\_11\_\_0.cnfU} introduced in Table~\ref {tb_bgmc_data}: {\sf (a)}~ an 11-row, 9-column sparse matrix in a {\it cnf format}~\cite {OPUS-cnf-2021-wiki}, {\sf (b)}~ the maximum bipartite matching problem: with 9 red edges representing the optimum solution, {\sf (c)}~ the minimum set covering problem: 4 vertices at the top cover all 11 vertices at the bottom as illustrated with 11 edges. \relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces  Maximum bipartite matching experiments with three datasets steiner3\nobreakspace  {}\cite  {OPUS-setc-2021-Resende-steiner3_data}, orlib\nobreakspace  {}\cite  {OPUS-setc-2014-orlib-Beasley}, and random\nobreakspace  {}\cite  {OPUS2-1993-benchm-Logic_synthesis} and two solvers: the solver in Java\nobreakspace  {}\cite  {OPUS-matching-2021-geeksforgeeks-java} and the solver in \textsf  {R}{}\nobreakspace  {}\cite  {OPUS-matching-2021-igraph-R}. The plot on left shows the {\tt  runtime\_read} for both solvers. The plot on right shows the {\tt  runtime\_match} for both solvers, i.e. the runtime to find the maximum matching. Only instances with runtimes $\ge $ 0.15 seconds are shown.\relax }}{6}{figure.caption.6}\protected@file@percent }
+\newlabel{fg_bgmc_matching_experiment}{{5}{6}{Maximum bipartite matching experiments with three datasets steiner3~\cite {OPUS-setc-2021-Resende-steiner3_data}, orlib~\cite {OPUS-setc-2014-orlib-Beasley}, and random~\cite {OPUS2-1993-benchm-Logic_synthesis} and two solvers: the solver in Java~\cite {OPUS-matching-2021-geeksforgeeks-java} and the solver in \R {}~\cite {OPUS-matching-2021-igraph-R}. The plot on left shows the {\tt runtime\_read} for both solvers. The plot on right shows the {\tt runtime\_match} for both solvers, i.e. the runtime to find the maximum matching. Only instances with runtimes $\ge $ 0.15 seconds are shown.\relax }{figure.caption.6}{}}
+\@LN@col{1}
+\@LN@col{2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}{\sf  Runtime experiments: Java vs R}}{6}{subsection.3.1}\protected@file@percent }
+\citation{OPUS2-2022-mclass-arxiv-Brglez}
+\citation{OPUS-setc-1979-OR-Chvatal-greedy,OPUS-setc-2016-Springer-Young-Greedy}
+\citation{OPUS-isomorph-1976-CognitivePhychology-Simon_Hayes}
+\citation{OPUS-isomorph-2001-Erlbaum-Gunzelmann-ACT-R_model}
+\citation{OPUS-isomorph-1996-MITPress-Simon-Models}
+\citation{OPUS-setc-2016-Springer-Young-Greedy}
+\citation{OPUS-setc-1979-OR-Chvatal-greedy}
+\citation{OPUS-setc-2016-Springer-Young-Greedy}
+\citation{OPUS-setc-1979-OR-Chvatal-greedy}
+\citation{OPUS2-2001-BDD-STTT-Harlow,OPUS2-2001-crossnum-JEA-Stallmann,OPUS2-2005-sat-AMAI-Brglez,OPUS2-2005-cover-DAC-Li,OPUS2-2007-isomorph-ExpCS-Brglez}
+\@LN@col{1}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Greedy Heuristic Distributions for Set Cover}{7}{section.4}\protected@file@percent }
+\newlabel{sec_cover}{{4}{7}{Greedy Heuristic Distributions for Set Cover}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}{\sf  On Impact of Problem Isomorphs}}{7}{subsection.4.1}\protected@file@percent }
+\@LN@col{2}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces  The pseudo code of the greedy algorithm above is from\nobreakspace  {}\cite  {OPUS-setc-2016-Springer-Young-Greedy}; it represents the version of the Chvatal's algorithm in\nobreakspace  {}\cite  {OPUS-setc-1979-OR-Chvatal-greedy}. The R-function that implements this algorithm is named {\tt  unate\_greedy\_chvatal\_basic} in Figure\nobreakspace  {}\ref  {fg_bgmc_unate_greedy_chvatal_stoc}a. The algorithm is invoked on two instance bigraphs, represented as two incidence matrices: (a) the reference instance {\tt  school\_5\_5\_ref}, and (b) the instance isomorph {\tt  school\_5\_5\_iso}. As implied by the matrix structure, the weight of each column is 1. For (a), the algorithm selects the {\it  first column with minimum rate between column weight and column degree}, i.e. column B. In the next iteration, there remain only two rows to consider: s1 and s5. The first column with maximum degree is now column A. The algorithm terminates by selecting column C, returning a solution as 3 columns \{B, A, C\} and the total weight of 3. For (b), the algorithm selects C as the first column with minimum rate between column weight and column degree. The next iteration is also the last. With the selection of column A, we get a solution as 2 columns \{C, A\} and the total weight of 2. \vspace  *{-4ex} \relax }}{7}{figure.caption.7}\protected@file@percent }
+\newlabel{fg_bgmc_unate_greedy_chvatal_iso_school_5_5}{{6}{7}{The pseudo code of the greedy algorithm above is from~\cite {OPUS-setc-2016-Springer-Young-Greedy}; it represents the version of the Chvatal's algorithm in~\cite {OPUS-setc-1979-OR-Chvatal-greedy}. The R-function that implements this algorithm is named {\tt unate\_greedy\_chvatal\_basic} in Figure~\ref {fg_bgmc_unate_greedy_chvatal_stoc}a. The algorithm is invoked on two instance bigraphs, represented as two incidence matrices: (a) the reference instance {\tt school\_5\_5\_ref}, and (b) the instance isomorph {\tt school\_5\_5\_iso}. As implied by the matrix structure, the weight of each column is 1. For (a), the algorithm selects the {\it first column with minimum rate between column weight and column degree}, i.e. column B. In the next iteration, there remain only two rows to consider: s1 and s5. The first column with maximum degree is now column A. The algorithm terminates by selecting column C, returning a solution as 3 columns \{B, A, C\} and the total weight of 3. For (b), the algorithm selects C as the first column with minimum rate between column weight and column degree. The next iteration is also the last. With the selection of column A, we get a solution as 2 columns \{C, A\} and the total weight of 2. \vspace *{-4ex} \relax }{figure.caption.7}{}}
+\citation{OPUS-setc-2012-LBCS-Saket-UB,OPUS-setc-2016-OR-Felici-UB,OPUS-setc-2019-STOC-Abboud-UB}
+\citation{OPUS-setc-1979-OR-Chvatal-greedy}
+\citation{OPUS-setc-1979-OR-Chvatal-greedy}
+\citation{OPUS-setc-1979-OR-Chvatal-greedy}
+\citation{OPUS-setc-1979-OR-Chvatal-greedy}
+\@LN@col{1}
+\newlabel{eq_ratio}{{1}{8}{\sf On Impact of Problem Isomorphs}{equation.4.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces  A statistical summary of results, based on experiments that involve 100 isomorphs, initialized with 100 seeds, created from each of the two instances: {\tt  school\_5\_5\_ref} and {\tt  school\_5\_5\_iso}. For the complete R-code of the stochastic greedy algorithm that relies on invoking any number of instance isomorphs, the algorithm {\tt  unate\_greedy\_chvatal\_iso} in Figure\nobreakspace  {}\ref  {fg_bgmc_unate_greedy_chvatal_stoc}a. However, identical results can also be generated, using the same seeds, with the alternative algorithm {\tt  unate\_greedy\_chvatal\_stoc} in Figure\nobreakspace  {}\ref  {fg_bgmc_unate_greedy_chvatal_stoc}b. \relax }}{8}{table.caption.8}\protected@file@percent }
+\newlabel{fg_gray_02_coupon_6_markov}{{2}{8}{A statistical summary of results, based on experiments that involve 100 isomorphs, initialized with 100 seeds, created from each of the two instances: {\tt school\_5\_5\_ref} and {\tt school\_5\_5\_iso}. For the complete R-code of the stochastic greedy algorithm that relies on invoking any number of instance isomorphs, the algorithm {\tt unate\_greedy\_chvatal\_iso} in Figure~\ref {fg_bgmc_unate_greedy_chvatal_stoc}a. However, identical results can also be generated, using the same seeds, with the alternative algorithm {\tt unate\_greedy\_chvatal\_stoc} in Figure~\ref {fg_bgmc_unate_greedy_chvatal_stoc}b. \relax }{table.caption.8}{}}
+\@LN@col{2}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces  Two examples of computing the minimum set cover upper bound UB. The first instance is a test case introduced in\nobreakspace  {}\cite  {OPUS-setc-1979-OR-Chvatal-greedy}. \vspace  *{-2.5ex} \relax }}{8}{figure.caption.9}\protected@file@percent }
+\newlabel{fg_bgmc_unate_greedy_chvatal_UB}{{7}{8}{Two examples of computing the minimum set cover upper bound UB. The first instance is a test case introduced in~\cite {OPUS-setc-1979-OR-Chvatal-greedy}. \vspace *{-2.5ex} \relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}{\sf  On Set Covers with a Stochastic Greedy Algorithm}}{8}{subsection.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces  Two equivalent {\it  stochastic versions} in R of the Chvatal's algorithm: (a) inducing distributions of set covers with bigraph isomorphs and (b) inducing distributions of set covers by randomizing best selections. To achieve the randomization, when ${\rm  replicaId} > 0$, we use the random selection returned by the R-function "which". \relax }}{9}{figure.caption.10}\protected@file@percent }
+\newlabel{fg_bgmc_unate_greedy_chvatal_stoc}{{8}{9}{Two equivalent {\it stochastic versions} in R of the Chvatal's algorithm: (a) inducing distributions of set covers with bigraph isomorphs and (b) inducing distributions of set covers by randomizing best selections. To achieve the randomization, when ${\rm replicaId} > 0$, we use the random selection returned by the R-function "which". \relax }{figure.caption.10}{}}
+\@LN@col{1}
+\@LN@col{2}
+\citation{OPUS-setc-1979-OR-Chvatal-greedy}
+\citation{OPUS-setc-2014-orlib-Beasley}
+\citation{OPUS-setc-2014-orlib-Beasley}
+\@LN@col{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}{\sf  Runtime Experiments}}{10}{subsection.4.3}\protected@file@percent }
+\@LN@col{2}
+\citation{OPUS-setc-2014-orlib-Beasley}
+\citation{OPUS-setc-2014-BRKGA-Resende-code,OPUS-setc-2014-BRKGA-Resende}
+\citation{OPUS-setc-2014-SWJ-Broderick-Bee_Colony}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces  Reference parameters for each instance in this figure are listed in Table\nobreakspace  {}\ref  {tb_bgmc_data}. The top segment {\sf  (school\_9\_11.cnfU)} depicts the empirical distribution of ratios \{1.0, 1.25, 1.5\} for the 8 isomorph classes of size 10,000 each, induced by the instance {\tt  school\_9\_11.cnfU}. The middle segment {\sf  (ab)} depicts distribution of ratios for two isomorph classes, each of size 1,000. The bottom segment {\sf  (cd)} depicts distribution of ratios the for two isomorph classes, each of size 10,000. For additional details, see the article. \vspace  *{-3ex} \relax }}{11}{figure.caption.11}\protected@file@percent }
+\newlabel{fg_bgmc_unate_greedy_chvatal_stoc_distr}{{9}{11}{Reference parameters for each instance in this figure are listed in Table~\ref {tb_bgmc_data}. The top segment {\sf (school\_9\_11.cnfU)} depicts the empirical distribution of ratios \{1.0, 1.25, 1.5\} for the 8 isomorph classes of size 10,000 each, induced by the instance {\tt school\_9\_11.cnfU}. The middle segment {\sf (ab)} depicts distribution of ratios for two isomorph classes, each of size 1,000. The bottom segment {\sf (cd)} depicts distribution of ratios the for two isomorph classes, each of size 10,000. For additional details, see the article. \vspace *{-3ex} \relax }{figure.caption.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces  Similar size instances and their variabilities: BKVs, UBs, Chvatal ratios, and harmonic numbers. For details, see the article. \relax }}{11}{table.caption.12}\protected@file@percent }
+\newlabel{tb_bgmc_school_19_20}{{3}{11}{Similar size instances and their variabilities: BKVs, UBs, Chvatal ratios, and harmonic numbers. For details, see the article. \relax }{table.caption.12}{}}
+\@LN@col{1}
+\@LN@col{2}
+\citation{OPUS-csc316-fall-2020}
+\citation{OPUS-github-rBedPlus-bgmc}
+\citation{OPUS-affiliation-2021-Springer-Stankova-bg_classification}
+\citation{OPUS2-2022-coupon-arxiv-Brglez}
+\citation{OPUS2-2022-mclass-arxiv-Brglez}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces  This is an extension of\nobreakspace  {}Table\nobreakspace  {}\ref  {tb_bgmc_data}. The {rows\nobreakspace  {}3--5} refer to three large instances from the OR-library\nobreakspace  {}\cite  {OPUS-setc-2014-orlib-Beasley}. The {rows\nobreakspace  {}6--8} introduce {\it  almost identical} instances related to instances on rows {rows\nobreakspace  {}3--5} with the exception that now {\it  all weights are set to 1.} For details, see the article. \relax }}{12}{table.caption.13}\protected@file@percent }
+\newlabel{tb_bgmc_data_BRKGA}{{4}{12}{This is an extension of~Table~\ref {tb_bgmc_data}. The {rows~3--5} refer to three large instances from the OR-library~\cite {OPUS-setc-2014-orlib-Beasley}. The {rows~6--8} introduce {\it almost identical} instances related to instances on rows {rows~3--5} with the exception that now {\it all weights are set to 1.} For details, see the article. \relax }{table.caption.13}{}}
+\@LN@col{1}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Summary and Future Work}{12}{section.5}\protected@file@percent }
+\newlabel{sec_summary}{{5}{12}{Summary and Future Work}{section.5}{}}
+\@LN@col{2}
+\citation{OPUS-R-manual}
+\citation{OPUS-setc-2014-BRKGA-Resende-code,OPUS-setc-2014-BRKGA-Resende}
+\citation{OPUS-setc-2014-SWJ-Broderick-Bee_Colony}
+\bibdata{../../_latex/_bibtex/OPUS_rBed,../../_latex/_bibtex/OPUS2}
+\bibcite{OPUS-matching-1998-Fueredi-bigraphs}{{1}{}{{}}{{}}}
+\bibcite{OPUS2-2022-coupon-arxiv-Brglez}{{2}{}{{}}{{}}}
+\bibcite{OPUS2-2022-mclass-arxiv-Brglez}{{3}{}{{}}{{}}}
+\bibcite{OPUS-R-manual}{{4}{}{{}}{{}}}
+\bibcite{OPUS-csc316-fall-2020}{{5}{}{{}}{{}}}
+\bibcite{OPUS-csc316-dataset}{{6}{}{{}}{{}}}
+\bibcite{OPUS-book_stats-1977-Wiley-Johnson-urn_models}{{7}{}{{}}{{}}}
+\bibcite{OPUS-csc316-guava}{{8}{}{{}}{{}}}
+\bibcite{OPUS-csc316-net-datastructure}{{9}{}{{}}{{}}}
+\bibcite{OPUS-csc316-data-frame}{{10}{}{{}}{{}}}
+\bibcite{OPUS-csc316-data-table}{{11}{}{{}}{{}}}
+\bibcite{OPUS-book_algs-1990-MCGraw_Hill-Cormen}{{12}{}{{}}{{}}}
+\bibcite{OPUS-matching-1956-Math-Ford_Fulkerson-max_flows}{{13}{}{{}}{{}}}
+\bibcite{OPUS-matching-1973-SIAM-Hopcroft_Karp}{{14}{}{{}}{{}}}
+\bibcite{OPUS-matching-2021-geeksforgeeks-java}{{15}{}{{}}{{}}}
+\bibcite{OPUS-matching-2021-igraph-R}{{16}{}{{}}{{}}}
+\bibcite{OPUS-setc-2021-Resende-steiner3_data}{{17}{}{{}}{{}}}
+\bibcite{OPUS-setc-2014-orlib-Beasley}{{18}{}{{}}{{}}}
+\bibcite{OPUS2-1993-benchm-Logic_synthesis}{{19}{}{{}}{{}}}
+\bibcite{OPUS-cnf-2021-wiki}{{20}{}{{}}{{}}}
+\bibcite{OPUS2-2005-cover-DAC-Li}{{21}{}{{}}{{}}}
+\bibcite{OPUS-github-rBedPlus-bgmc}{{22}{}{{}}{{}}}
+\bibcite{OPUS-setc-1979-OR-Chvatal-greedy}{{23}{}{{}}{{}}}
+\bibcite{OPUS-setc-2016-Springer-Young-Greedy}{{24}{}{{}}{{}}}
+\bibcite{OPUS-isomorph-1976-CognitivePhychology-Simon_Hayes}{{25}{}{{}}{{}}}
+\bibcite{OPUS-isomorph-2001-Erlbaum-Gunzelmann-ACT-R_model}{{26}{}{{}}{{}}}
+\bibcite{OPUS-isomorph-1996-MITPress-Simon-Models}{{27}{}{{}}{{}}}
+\bibcite{OPUS2-2001-BDD-STTT-Harlow}{{28}{}{{}}{{}}}
+\bibcite{OPUS2-2001-crossnum-JEA-Stallmann}{{29}{}{{}}{{}}}
+\bibcite{OPUS2-2005-sat-AMAI-Brglez}{{30}{}{{}}{{}}}
+\bibcite{OPUS2-2007-isomorph-ExpCS-Brglez}{{31}{}{{}}{{}}}
+\bibcite{OPUS-setc-2012-LBCS-Saket-UB}{{32}{}{{}}{{}}}
+\bibcite{OPUS-setc-2016-OR-Felici-UB}{{33}{}{{}}{{}}}
+\bibcite{OPUS-setc-2019-STOC-Abboud-UB}{{34}{}{{}}{{}}}
+\bibcite{OPUS-setc-2014-BRKGA-Resende-code}{{35}{}{{}}{{}}}
+\bibcite{OPUS-setc-2014-BRKGA-Resende}{{36}{}{{}}{{}}}
+\bibcite{OPUS-setc-2014-SWJ-Broderick-Bee_Colony}{{37}{}{{}}{{}}}
+\@LN@col{1}
+\@LN@col{2}
+\bibcite{OPUS-affiliation-2021-Springer-Stankova-bg_classification}{{38}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\@LN@col{1}
+\@LN@col{2}

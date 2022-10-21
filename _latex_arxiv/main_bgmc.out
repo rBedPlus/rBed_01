@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Beyond CSC316 and Java}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Data Structures and Java Libraries}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Runtime experiments: Java vs R}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Correlation Experiments with MovieLib Dataset}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Maximum Matching in Bipartite Graphs}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Runtime experiments: Java vs R}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Greedy Heuristic Distributions for Set Cover}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{On Impact of Problem Isomorphs}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{On Set Covers with a Stochastic Greedy Algorithm}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Runtime Experiments}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Summary and Future Work}{}% 12
